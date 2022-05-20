@@ -1,0 +1,550 @@
+<%- contentFor('HeaderCss') %>
+
+<%- contentFor('breadcrumb') %>
+
+<!-- start page title -->
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-flex align-items-center justify-content-between">
+            <h4 class="mb-0">Dashboard</h4>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Nazox</a></li>
+                    <li class="breadcrumb-item active">Dashboard</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- end page title -->
+
+<%- contentFor('body') %>
+
+<div class="row">
+    <div class="col-xl-8" >
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card" style="border-radius: 10px;">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="flex-1 overflow-hidden">
+                                <p class="text-truncate font-size-20 mb-2" style="font-famiLy: roboto;">Station Details</p>
+                                <span class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">ID:  </span>
+                                <span class="mb-0" style="color:#2E7EFF; font-size:30px;">RCFC3</span>
+                                <br>
+                                <span class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">Shake/Pi:  </span>
+                                <span class="mb-0" style="color:#2E7EFF; font-size:20px;">RS1D 3 Model B</span>
+                                <br>
+                                <span class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">Local IP:  </span>
+                                <span class="mb-0" style="color:#2E7EFF; font-size:20px;">192.168.1.33</span>
+                                <br>
+                                <span class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">Latitude:  </span>
+                                <span class="mb-0" style="color:#2E7EFF; font-size:20px;">8.7390</span>
+                                <br>
+                                <span class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">Longitude:  </span>
+                                <span class="mb-0" style="color:#2E7EFF; font-size:20px;">-82.9468</span>
+                                <br>
+                                <span class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">Elevation:  </span>
+                                <span class="mb-0" style="color:#2E7EFF; font-size:20px;">1059 m</span>
+                            </div>
+                            <div class="text-primary ms-auto">
+                                <i class="ri-stack-line font-size-24"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body border-top py-3">
+                        <div class="text-truncate">
+                            <span class="badge badge-soft-success font-size-11"><i class="mdi mdi-menu-up"> </i> 0 Days 4 Hours 11 Minutes </span>
+                            <span class="text-muted ms-2">Uptime</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="flex-1 overflow-hidden">
+                                <p class="text-truncate font-size-14 mb-2">Average Price</p>
+                                <h4 class="mb-0">$ 15.4</h4>
+                            </div>
+                            <div class="text-primary ms-auto">
+                                <i class="ri-briefcase-4-line font-size-24"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body border-top py-3">
+                        <div class="text-truncate">
+                            <span class="badge badge-soft-success font-size-11"><i class="mdi mdi-menu-up"> </i> 2.4% </span>
+                            <span class="text-muted ms-2">From previous period</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+
+        <div class="row">
+           
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="dropdown float-end">
+                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="mdi mdi-dots-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item">Refresh</a>
+                             
+                            </div>
+                        </div>
+        
+                        <h4 class="card-title mb-4">Stations on Local Network</h4>
+        
+                        <div class="table-responsive">
+                            <table class="table table-centered datatable dt-responsive nowrap" data-bs-page-length="5" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                <thead class="table-light">
+                                    <tr>
+                                        
+                                        <th>Station</th>
+                                        <th>Id</th>
+                                        <th>Ip</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                      
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                       
+                                        
+                                        <td><a href="javascript: void(0);" class="text-dark fw-bold">#RCFC34</a> </td>
+                                        <td>
+                                            AM.RCFC3.00.EHZ
+                                        </td>
+                                        <td>192.168.1.15</td>
+                                        
+                                    
+                                        <td>
+                                            <div class="badge badge-soft-success font-size-12">Online</div>
+                                        </td>
+                                        <td id="tooltip-container1">
+                                            <a href="javascript:void(0);" class="me-3 text-primary" data-bs-container="#tooltip-container1" data-bs-toggle="tooltip" data-bs-placement="top" title="Config"><i class="mdi mdi-cog font-size-18"></i></a>
+                    
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                       
+                                        
+                                        <td><a href="javascript: void(0);" class="text-dark fw-bold">#RCFC36</a> </td>
+                                        <td>
+                                            AM.RCFC3.00.EHZ
+                                        </td>
+                                        <td>192.168.1.58</td>
+                                        
+                                        
+                                        <td>
+                                            <div class="badge badge-soft-warning font-size-12">Offline</div>
+                                        </td>
+                                        <td id="tooltip-container2">
+                                            <a href="javascript:void(0);" class="me-3 text-primary" data-bs-container="#tooltip-container2" data-bs-toggle="tooltip" data-bs-placement="top" title="Config"><i class="mdi mdi-cog font-size-18"></i></a>
+                                            </td>
+                                    </tr>
+        
+                                    <tr>
+                                       
+                                        
+                                        <td><a href="javascript: void(0);" class="text-dark fw-bold">#RFC1570</a> </td>
+                                        <td>
+                                            AM.RCFC3.00.EHZ 
+                                        </td>
+                                        <td>192.168.1.30</td>
+                                        
+                                        
+                                        <td>
+                                            <div class="badge badge-soft-success font-size-12">Online</div>
+                                        </td>
+                                        <td id="tooltip-container3">
+                                            <a href="javascript:void(0);" class="me-3 text-primary" data-bs-container="#tooltip-container3" data-bs-toggle="tooltip" data-bs-placement="top" title="Config"><i class="mdi mdi-cog font-size-18"></i></a>
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                       
+                                        
+                                        <td><a href="javascript: void(0);" class="text-dark fw-bold">#RCF569</a> </td>
+                                        <td>
+                                            AM.RCFC3.00.EHZ 
+                                        </td>
+                                        <td>192.168.1.29</td>
+                                        
+                                       
+                                        <td>
+                                            <div class="badge badge-soft-success font-size-12">Online</div>
+                                        </td>
+                                        <td id="tooltip-container41">
+                                            <a href="javascript:void(0);" class="me-3 text-primary" data-bs-container="#tooltip-container41" data-bs-toggle="tooltip" data-bs-placement="top" title="Config"><i class="mdi mdi-cog font-size-18"></i></a>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       
+                                        
+                                        <td><a href="javascript: void(0);" class="text-dark fw-bold">#RCF168</a> </td>
+                                        <td>
+                                            AM.RCFC3.00.EHZ 
+                                        </td>
+                                        <td>192.168.1.20</td>
+                                        
+                                      
+                                        <td>
+                                            <div class="badge badge-soft-danger font-size-12">Disconected</div>
+                                        </td>
+                                        <td id="tooltip-container4">
+                                            <a href="javascript:void(0);" class="me-3 text-primary" data-bs-container="#tooltip-container4" data-bs-toggle="tooltip" data-bs-placement="top" title="Config"><i class="mdi mdi-cog font-size-18"></i></a>
+                                       </td>
+                                    </tr>
+                                 
+                                    
+                                    
+                                    
+                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!-- Final del contenedor-->
+
+
+<!-- Seccion aqui-->
+
+    </div>
+
+    <!-- Seccion aqui-->
+</div>
+<!-- end row -->
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="dropdown float-end">
+                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="mdi mdi-dots-vertical"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item">Refresh</a>
+                       
+                    </div>
+                </div>
+
+                <h4 class="card-title mb-3">Sources</h4>
+
+                <div>
+                    <div class="text-center">
+                        <p class="mb-2">Total sources</p>
+                        <h4>$ 7652</h4>
+                        <div class="text-success">
+                            <i class="mdi mdi-menu-up font-size-14"> </i>2.2 %
+                        </div>
+                    </div>
+
+                    <div class="table-responsive mt-4">
+                        <table class="table table-hover mb-0 table-centered table-nowrap">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 60px;">
+                                        <div class="avatar-xs">
+                                            <div class="avatar-title rounded-circle bg-light">
+                                                <img src="public/assets/images/companies/img-1.png" alt="img-1" height="20">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    
+                                    <td>
+                                        <h5 class="font-size-14 mb-0">Source 1</h5>
+                                    </td>
+                                    <td><div id="spak-chart1"></div></td>
+                                    <td>
+                                        <p class="text-muted mb-0">$ 2478</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="avatar-xs">
+                                            <div class="avatar-title rounded-circle bg-light">
+                                                <img src="public/assets/images/companies/img-2.png" alt="img-2" height="20">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h5 class="font-size-14 mb-0">Source 2</h5>
+                                    </td>
+                                    
+                                    <td><div id="spak-chart2"></div></td>
+                                    <td>
+                                        <p class="text-muted mb-0">$ 2625</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="avatar-xs">
+                                            <div class="avatar-title rounded-circle bg-light">
+                                                <img src="public/assets/images/companies/img-3.png" alt="img-3" height="20">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h5 class="font-size-14 mb-0">Source 3</h5>
+                                    </td>
+                                    <td><div id="spak-chart3"></div></td>
+                                    <td>
+                                        <p class="text-muted mb-0">$ 2856</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <a href="#" class="btn btn-primary btn-sm">View more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="dropdown float-end">
+                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="mdi mdi-dots-vertical"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item">Sales Report</a>
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item">Profit</a>
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                    </div>
+                </div>
+
+                <h4 class="card-title mb-4">Recent Activity Feed</h4>
+
+                <div data-simplebar style="max-height: 330px;">
+                    <ul class="list-unstyled activity-wid">
+                        <li class="activity-list">
+                            <div class="activity-icon avatar-xs">
+                                <span class="avatar-title bg-soft-primary text-primary rounded-circle">
+                                    <i class="ri-edit-2-fill"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <div>
+                                    <h5 class="font-size-13">28 Apr, 2020 <small class="text-muted">12:07 am</small></h5>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-muted mb-0">Responded to need “Volunteer Activities”</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="activity-list">
+                            <div class="activity-icon avatar-xs">
+                                <span class="avatar-title bg-soft-primary text-primary rounded-circle">
+                                    <i class="ri-user-2-fill"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <div>
+                                    <h5 class="font-size-13">21 Apr, 2020 <small class="text-muted">08:01 pm</small></h5>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-muted mb-0">Added an interest “Volunteer Activities”</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="activity-list">
+                            <div class="activity-icon avatar-xs">
+                                <span class="avatar-title bg-soft-primary text-primary rounded-circle">
+                                    <i class="ri-bar-chart-fill"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <div>
+                                    <h5 class="font-size-13">17 Apr, 2020 <small class="text-muted">09:23 am</small></h5>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-muted mb-0">Joined the group “Boardsmanship Forum”</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="activity-list">
+                            <div class="activity-icon avatar-xs">
+                                <span class="avatar-title bg-soft-primary text-primary rounded-circle">
+                                    <i class="ri-mail-fill"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <div>
+                                    <h5 class="font-size-13">11 Apr, 2020 <small class="text-muted">05:10 pm</small></h5>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-muted mb-0">Responded to need “In-Kind Opportunity”</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="activity-list">
+                            <div class="activity-icon avatar-xs">
+                                <span class="avatar-title bg-soft-primary text-primary rounded-circle">
+                                    <i class="ri-calendar-2-fill"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <div>
+                                    <h5 class="font-size-13">07 Apr, 2020 <small class="text-muted">12:47 pm</small></h5>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-muted mb-0">Created need “Volunteer Activities”</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="activity-list">
+                            <div class="activity-icon avatar-xs">
+                                <span class="avatar-title bg-soft-primary text-primary rounded-circle">
+                                    <i class="ri-edit-2-fill"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <div>
+                                    <h5 class="font-size-13">05 Apr, 2020 <small class="text-muted">03:09 pm</small></h5>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-muted mb-0">Attending the event “Some New Event”</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="activity-list">
+                            <div class="activity-icon avatar-xs">
+                                <span class="avatar-title bg-soft-primary text-primary rounded-circle">
+                                    <i class="ri-user-2-fill"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <div>
+                                    <h5 class="font-size-13">02 Apr, 2020 <small class="text-muted">12:07 am</small></h5>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-muted mb-0">Responded to need “In-Kind Opportunity”</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="dropdown float-end">
+                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="mdi mdi-dots-vertical"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item">Sales Report</a>
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item">Profit</a>
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                    </div>
+                </div>
+
+                <h4 class="card-title mb-4">Revenue by Locations</h4>
+
+                <div id="usa-vectormap" style="height: 196px"></div>
+
+                <div class="row justify-content-center">
+                    <div class="col-xl-5 col-md-6">
+                        <div class="mt-2">
+                            <div class="clearfix py-2">
+                                <h5 class="float-end font-size-16 m-0">$ 2542</h5>
+                                <p class="text-muted mb-0 text-truncate">California :</p>
+                                
+                            </div>
+                            <div class="clearfix py-2">
+                                <h5 class="float-end font-size-16 m-0">$ 2245</h5>
+                                <p class="text-muted mb-0 text-truncate">Nevada :</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 offset-xl-1 col-md-6">
+                        <div class="mt-2">
+                            <div class="clearfix py-2">
+                                <h5 class="float-end font-size-16 m-0">$ 2156</h5>
+                                <p class="text-muted mb-0 text-truncate">Montana :</p>
+                                
+                            </div>
+                            <div class="clearfix py-2">
+                                <h5 class="float-end font-size-16 m-0">$ 1845</h5>
+                                <p class="text-muted mb-0 text-truncate">Texas :</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end row -->
+
+
+<!-- end row -->
+
+<%- contentFor('FooterJs') %>
+
+ <!-- apexcharts -->
+ <script src="public/assets/libs/apexcharts/apexcharts.min.js"></script>
+
+ <!-- jquery.vectormap map -->
+ <script src="public/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+ <script src="public/assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js"></script>
+
+ <!-- Required datatable js -->
+ <script src="public/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+ <script src="public/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+ 
+ <!-- Responsive examples -->
+ <script src="public/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+ <script src="public/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+ <script src="public/assets/js/pages/dashboard.init.js"></script>
+
+<%- contentFor('BottomJs') %>
