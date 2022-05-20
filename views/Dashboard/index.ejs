@@ -10,7 +10,7 @@
 
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item"><a href="javascript: void(0);">Nazox</a></li>
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">RasperryShake</a></li>
                     <li class="breadcrumb-item active">Dashboard</li>
                 </ol>
             </div>
@@ -26,11 +26,11 @@
     <div class="col-xl-8" >
         <div class="row">
             <div class="col-md-6">
-                <div class="card" style="border-radius: 10px;">
+                <div class="card" style="border-radius: 20px;">
                     <div class="card-body">
                         <div class="d-flex">
                             <div class="flex-1 overflow-hidden">
-                                <p class="text-truncate font-size-20 mb-2" style="font-famiLy: roboto;">Station Details</p>
+                                <p class="text-truncate font-size-20 mb-2" style="font-famiLy: roboto; color:#00172A;">Station Details</p>
                                 <span class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">ID:  </span>
                                 <span class="mb-0" style="color:#2E7EFF; font-size:30px;">RCFC3</span>
                                 <br>
@@ -50,48 +50,68 @@
                                 <span class="mb-0" style="color:#2E7EFF; font-size:20px;">1059 m</span>
                             </div>
                             <div class="text-primary ms-auto">
-                                <i class="ri-stack-line font-size-24"></i>
+                                <i class="mdi mdi-cog font-size-24"></i>
                             </div>
                         </div>
                     </div>
 
                     <div class="card-body border-top py-3">
                         <div class="text-truncate">
-                            <span class="badge badge-soft-success font-size-11"><i class="mdi mdi-menu-up"> </i> 0 Days 4 Hours 11 Minutes </span>
-                            <span class="text-muted ms-2">Uptime</span>
+                            <span class="badge badge-soft-success  font-size-15"><i class="mdi mdi-menu-up"> </i> 0 Days 4 Hours 11 Minutes </span>
+                            <span class="text-muted ms-2 font-size-15">Uptime</span>
                         </div>
                     </div>
                 </div>
             </div>
            
-            <div class="col-md-4">
-                <div class="card">
+            <div class="col-md-6">
+                <div class="card" style="border-radius:20px;">
                     <div class="card-body">
                         <div class="d-flex">
                             <div class="flex-1 overflow-hidden">
-                                <p class="text-truncate font-size-14 mb-2">Average Price</p>
-                                <h4 class="mb-0">$ 15.4</h4>
+                                <p class="text-truncate font-size-20 mb-2" style=" color:#3B72FF ;">Continue Securing your Account!</p>
+                                <h6 class="mb-0">Please change your ssl password and increase account security.</h6>
                             </div>
                             <div class="text-primary ms-auto">
-                                <i class="ri-briefcase-4-line font-size-24"></i>
+                                <i class="ri-close-circle-line font-size-24"></i>
                             </div>
                         </div>
                     </div>
+
+                    <div style="margin-left: 20px; margin-bottom: 20px;">
+                        <button style="border:none;border-radius:6px 6px 6px 6px;cursor:auto; padding:8px 15px 10px 15px;background:#0065de;" valign="middle" allign="center">
+                          <a href="#UrlLinkhere" style="display:inline-block;width:194px;background:#0065de;color:#ffffff;font-family:Roboto,Arial,sans-serif;font-size:13px;font-weight:normal;line-height:100%;margin:0;text-decoration:none;text-transform:none;padding:12px 4px 12px 4px;border-radius:6px 6px 6px 6px;" target="_blank"> <span style="line-height:exactly;font-size:16px;font-family:Roboto,Arial,sans-serif;font-weight:700;text-transform:uppercase;color:#ffffff;line-height:32px;">Change SSL Password</span></a>
+                        </button>
+                        <span style="padding-left: 20px; font-size: 20px; font-weight: 700;"> I'll do it later</span>
+
+</div>
+
+
+
+                      </div>
+
+                      <!-- Beauty card here -->
+                      <!-- 
                     <div class="card-body border-top py-3">
                         <div class="text-truncate">
-                            <span class="badge badge-soft-success font-size-11"><i class="mdi mdi-menu-up"> </i> 2.4% </span>
-                            <span class="text-muted ms-2">From previous period</span>
-                        </div>
-                    </div>
+                            <span class="badge badge-soft-success font-size-11"><i class="mdi mdi-menu-up"> </i> text here </span>
+                            <span class="text-muted ms-2">From previous </span>
+                        </div> -->
+                    </div> 
+
+
                 </div>
             </div>
         </div>
         <!-- end row -->
 
+
+     <!-- end row-Container Stations -->
+
         <div class="row">
            
-            <div class="col-lg-8">
-                <div class="card">
+            <div class="col-lg-4">
+                <div class="card" style="border-radius: 20px;">
                     <div class="card-body">
                         <div class="dropdown float-end">
                             <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
@@ -104,7 +124,7 @@
                             </div>
                         </div>
         
-                        <h4 class="card-title mb-4">Stations on Local Network</h4>
+                        <h4 class="card-title mb-4" style="font-famiLy: roboto; font-size:20px; color:#00172A;">Stations on Local Network</h4>
         
                         <div class="table-responsive">
                             <table class="table table-centered datatable dt-responsive nowrap" data-bs-page-length="5" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
@@ -149,7 +169,7 @@
                                         
                                         
                                         <td>
-                                            <div class="badge badge-soft-warning font-size-12">Offline</div>
+                                            <div class="badge badge-soft-danger font-size-12">Offline</div>
                                         </td>
                                         <td id="tooltip-container2">
                                             <a href="javascript:void(0);" class="me-3 text-primary" data-bs-container="#tooltip-container2" data-bs-toggle="tooltip" data-bs-placement="top" title="Config"><i class="mdi mdi-cog font-size-18"></i></a>
@@ -218,6 +238,39 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+        
+                        <p class="text-truncate font-size-20 mb-2" style=" color:#3B72FF ;">Activity Preview</p>
+                                
+                        <div class="">
+                            <img src="public/assets/images/cap.png" class="img-fluid" alt="Responsive image">
+                        </div>
+                        <h6 class="mb-0">Use the ShakeNet web or mobile apps to visualize and analyze your data in detail.</h6>
+                        
+                    </div>
+
+                    <div style="margin-left: 20px; margin-bottom: 20px;">
+                        <button style="border:none;border-radius:6px 6px 6px 6px;cursor:auto; padding:8px 15px 10px 15px;background:#0065de;" valign="middle" allign="center">
+                          <a href="#UrlLinkhere" style="display:inline-block;width:194px;background:#0065de;color:#ffffff;font-family:Roboto,Arial,sans-serif;font-size:13px;font-weight:normal;line-height:100%;margin:0;text-decoration:none;text-transform:none;padding:auto;border-radius:6px 6px 6px 6px;" target="_blank"> <span style="line-height:exactly;font-size:16px;font-family:Roboto,Arial,sans-serif;font-weight:700;text-transform:uppercase;color:#ffffff;line-height:32px;">ShakeNet Web</span></a>
+                        </button>
+                        <button style="border:none;border-radius:6px 6px 6px 6px;cursor:auto; padding:8px 15px 10px 15px;background:#0065de;" valign="middle" allign="center">
+                            <a href="#UrlLinkhere" style="display:inline-block;width:194px;background:#0065de;color:#ffffff;font-family:Roboto,Arial,sans-serif;font-size:13px;font-weight:normal;line-height:100%;margin:0;text-decoration:none;text-transform:none;padding:auto;border-radius:6px 6px 6px 6px;" target="_blank"> <span style="line-height:exactly;font-size:16px;font-family:Roboto,Arial,sans-serif;font-weight:700;text-transform:uppercase;color:#ffffff;line-height:32px;">Web App</span></a>
+                          </button>
+
+</div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4">
+                
+            </div>
+
+
         </div>
 
 
@@ -546,5 +599,7 @@
  <script src="public/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
 
  <script src="public/assets/js/pages/dashboard.init.js"></script>
+
+ 
 
 <%- contentFor('BottomJs') %>

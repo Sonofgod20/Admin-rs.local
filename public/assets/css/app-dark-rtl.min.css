@@ -1389,7 +1389,7 @@ body[data-layout="horizontal"][data-layout-size="boxed"] .container-fluid, body[
     margin: 0; }
   .card {
     
-    border-radius: 10px;
+    border-radius: 20px;
   } }
 
 [data-simplebar] {
