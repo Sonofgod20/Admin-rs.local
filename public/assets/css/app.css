@@ -2682,8 +2682,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td {
   color: #343a40;
   border: 1px solid #e8ecf4; }
   .table-rep-plugin .btn-group .btn-default.btn-primary {
-    background-color: #5664d2;
-    border-color: #5664d2;
+    background-color: #0065de;
+    border-color: #0065de;
     color: #fff; }
 
 .table-rep-plugin .btn-group.pull-right {
@@ -2752,14 +2752,14 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td {
     background-color: #f8f9fa;
     cursor: not-allowed; }
   .table-rep-plugin .checkbox-row input[type="checkbox"]:checked + label::before {
-    background-color: #5664d2;
-    border-color: #5664d2; }
+    background-color: #0065de;
+    border-color: #0065de; }
   .table-rep-plugin .checkbox-row input[type="checkbox"]:checked + label::after {
     color: #fff; }
 
 .table-rep-plugin .fixed-solution .sticky-table-header {
   top: 70px !important;
-  background-color: #5664d2; }
+  background-color: #0065de; }
   .table-rep-plugin .fixed-solution .sticky-table-header table {
     color: #fff; }
 
@@ -2856,7 +2856,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td {
   color: #fff;
   font-size: 16px;
   line-height: 40px;
-  background: #5664d2;
+  background: #0065de;
   border-radius: 4px;
   padding: 10px 20px; }
 
@@ -2870,12 +2870,12 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td {
     bottom: -15px;
     border-right: 16px solid transparent;
     border-left: 16px solid transparent;
-    border-top: 16px solid #5664d2; }
+    border-top: 16px solid #0065de; }
   .gmaps-overlay_arrow.below {
     top: -15px;
     border-right: 16px solid transparent;
     border-left: 16px solid transparent;
-    border-bottom: 16px solid #5664d2; }
+    border-bottom: 16px solid #0065de; }
 
 .jvectormap-label {
   border: none;
@@ -2930,7 +2930,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td {
             transform: translateY(-50%);
     right: 19px;
     font-size: 24px;
-    color: #5664d2; }
+    color: #0065de; }
 
 .home-btn {
   position: absolute;
@@ -2985,7 +2985,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td {
     padding: 4px 16px;
     color: #505d69; }
   .ecommerce .accordion-body li.active a {
-    color: #5664d2; }
+    color: #0065de; }
 
 .product-detai-imgs .nav .nav-link {
   margin: 7px 0px; }
@@ -3001,9 +3001,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td {
     border: 2px solid #eff2f7;
     border-radius: 4px; }
   .product-color a.active, .product-color a:hover {
-    color: #5664d2; }
+    color: #0065de; }
     .product-color a.active .product-color-item, .product-color a:hover .product-color-item {
-      border-color: #5664d2 !important; }
+      border-color: #0065de !important; }
 
 .ecommerce-sortby-list li {
   color: #343a40; }
@@ -3011,7 +3011,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td {
     color: #505d69;
     padding: 4px; }
   .ecommerce-sortby-list li.active a {
-    color: #5664d2; }
+    color: #0065de; }
 
 .product-box {
   padding: 24px;

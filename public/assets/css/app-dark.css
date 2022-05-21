@@ -682,7 +682,7 @@ body[data-sidebar="colored"] .vertical-menu {
   background: #5664d2; }
 
 body[data-sidebar="colored"] .navbar-brand-box {
-  background-color: #5664d2; }
+  background-color: #0065de; }
   body[data-sidebar="colored"] .navbar-brand-box .logo-dark {
     display: none; }
   body[data-sidebar="colored"] .navbar-brand-box .logo-light {
@@ -2684,8 +2684,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td {
   color: #eff2f7;
   border: 1px solid #292f42; }
   .table-rep-plugin .btn-group .btn-default.btn-primary {
-    background-color: #5664d2;
-    border-color: #5664d2;
+    background-color: #0065de;
+    border-color: #0065de;
     color: #fff; }
 
 .table-rep-plugin .btn-group.pull-right {
@@ -2754,14 +2754,14 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td {
     background-color: #212529;
     cursor: not-allowed; }
   .table-rep-plugin .checkbox-row input[type="checkbox"]:checked + label::before {
-    background-color: #5664d2;
-    border-color: #5664d2; }
+    background-color: #0065de;
+    border-color: #0065de; }
   .table-rep-plugin .checkbox-row input[type="checkbox"]:checked + label::after {
     color: #fff; }
 
 .table-rep-plugin .fixed-solution .sticky-table-header {
   top: 70px !important;
-  background-color: #5664d2; }
+  background-color: #0065de; }
   .table-rep-plugin .fixed-solution .sticky-table-header table {
     color: #fff; }
 
