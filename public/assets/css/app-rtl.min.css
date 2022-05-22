@@ -1388,6 +1388,7 @@ body[data-layout="horizontal"][data-layout-size="boxed"] .container-fluid, body[
     padding: 0;
     margin: 0; }
   .card {
+   border-radius:16px;
     border: 0; } }
 
 [data-simplebar] {
