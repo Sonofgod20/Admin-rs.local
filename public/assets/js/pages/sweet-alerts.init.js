@@ -54,15 +54,15 @@ File: Sweetalert Js File
         $('#sa-warning').click(function () {
             Swal.fire({
                 title: "Are you sure?",
-                text: "You won't be able to revert this!",
+                text: "All changes are ok?",
                 icon: "warning",
                 showCancelButton: true,
                 confirmButtonColor: "#1cbb8c",
                 cancelButtonColor: "#ff3d60",
-                confirmButtonText: "Yes, delete it!"
+                confirmButtonText: "Yes"
               }).then(function (result) {
                 if (result.value) {
-                  Swal.fire("Deleted!", "Your file has been deleted.", "success");
+                  Swal.fire("Saved!", "Rebooting system", "success");
                 }
             });
         });
@@ -71,10 +71,10 @@ File: Sweetalert Js File
         $('#sa-params').click(function () {
 			Swal.fire({
                 title: 'Are you sure?',
-                text: "You won't be able to revert this!",
+                text: "All changes are ok?",
                 icon: 'warning',
                 showCancelButton: true,
-                confirmButtonText: 'Yes, delete it!',
+                confirmButtonText: 'Yes, Save',
                 cancelButtonText: 'No, cancel!',
                 confirmButtonClass: 'btn btn-success mt-2',
                 cancelButtonClass: 'btn btn-danger ms-2 mt-2',
@@ -82,8 +82,8 @@ File: Sweetalert Js File
             }).then(function (result) {
                 if (result.value) {
                     Swal.fire({
-                      title: 'Deleted!',
-                      text: 'Your file has been deleted.',
+                      title: 'Reboot!',
+                      text: 'All changes made.',
                       icon: 'success'
                     })
                   } else if (
@@ -192,10 +192,10 @@ File: Sweetalert Js File
                 showLoaderOnConfirm: true,
                 confirmButtonColor: "#5664d2",
                 cancelButtonColor: "#ff3d60",
-                preConfirm: function (email) {
+                preConfirm: function (subject) {
                     return new Promise(function (resolve, reject) {
                         setTimeout(function () {
-                            if (email === 'taken@example.com') {
+                            if (subject === 'shakeme') {
                                 reject('This email is already taken.')
                             } else {
                                 resolve()
@@ -204,12 +204,12 @@ File: Sweetalert Js File
                     })
                 },
                 allowOutsideClick: false
-            }).then(function (email) {
+            }).then(function (subject) {
                 Swal.fire({
                     icon: 'success',
                     title: 'Ajax request finished!',
                     confirmButtonColor: "#5664d2",
-                    html: 'Submitted email: ' + email
+                    html: 'Submitted email: ' + subject
                 })
             })
         });
