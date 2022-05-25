@@ -32,21 +32,21 @@
                         <div class="table-responsive">
                             <table class="table">
         
-                                <h5 class="mb-3" style="font-famiLy: roboto; color:#00172A">Station Details</h5>
+                                <h6 class="mb-3" style="font-famiLy: roboto; color:#00172A">Station Details</h6>
                                 <tbody>
                                     <tr>
                                         <td style="text-align: right;">
-                                            <label class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">Shake/Pi</label></td>
-                                            <td style="vertical-align:middle ;">:</td>
+                                            <h6 style="color: rgba(105, 111, 121, 0.6);">Shake/Pi</h6></td>
+                                            <td>:</td>
                                             <td>
                                             <label class="mb-0" style="color:#2E7EFF; font-size:20px;">RS1D 3 Model B</label>
                                             </td>
                                             </tr>
                             
-                                            <tr style="line-height: 1.5;">
+                                            <tr>
                                                 <td style="text-align: right;">
-                                                    <label class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">Local IP</label></td>
-                                                    <td style="vertical-align:middle ;">:</td>
+                                                    <h6 style="color: rgba(105, 111, 121, 0.6);">Local IP</h6></td>
+                                                    <td>:</td>
                                                     <td>
                                                     <label class="mb-0" style="color:#2E7EFF; font-size:20px;">192.168.1.33</label>
                                                     </td>
@@ -54,8 +54,8 @@
 
                                                     <tr>
                                                         <td style="text-align: right;">
-                                                            <label class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">Latitude</label></td>
-                                                            <td style="vertical-align:middle ;">:</td>
+                                                            <h6  style="color: rgba(105, 111, 121, 0.6);">Latitude</h6></td>
+                                                            <td>:</td>
                                                             <td>
                                                             <label class="mb-0" style="color:#2E7EFF; font-size:20px;">8.7390</label>
                                                             </td>
@@ -63,33 +63,35 @@
 
                                                             <tr>
                                                                 <td style="text-align: right;">
-                                                                    <label class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">Longitude</label></td>
-                                                                    <td style="vertical-align:middle ;">:</td>
+                                                                    <h6 style="color: rgba(105, 111, 121, 0.6); ">Longitude</h6></td>
+                                                                    <td>:</td>
                                                                     <td>
-                                                                    <label class="mb-0" style="color:#2E7EFF; font-size:20px;">-82.9468</label>
+                                                                    <label  style="color:#2E7EFF; font-size:20px;">-82.9468</label>
                                                                     </td>
                                                                     </tr>
 
                                                                     <tr>
                                                                         <td style="text-align: right;">
-                                                                            <label class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">Elevation</label></td>
-                                                                            <td style="vertical-align:middle;">:</td>
+                                                                            <h6  style="color: rgba(105, 111, 121, 0.6);">Elevation</h6></td>
+                                                                            <td>:</td>
                                                                             <td>
-                                                                            <label class="mb-0" style="color:#2E7EFF; font-size:20px;">1059 m</label>
+                                                                            <label  style="color:#2E7EFF; font-size:20px;">1059 m</label>
                                                                             </td>
                                                                             </tr>
                                     
                                 </tbody>
                             </table>
+                            <div class="card-body py-3">
+                                <div class="text-truncate">
+                                    <span class="badge badge-soft-success  font-size-15"><i class="mdi mdi-menu-up"> </i> 0 Days 4 Hours 11 Minutes </span>
+                                    <span class="text-muted ms-2 font-size-15">Uptime</span>
+                                </div>
+                            </div>
                         </div>
+                       
                     </div>
 
-                    <div class="card-body py-3">
-                        <div class="text-truncate">
-                            <span class="badge badge-soft-success  font-size-15"><i class="mdi mdi-menu-up"> </i> 0 Days 4 Hours 11 Minutes </span>
-                            <span class="text-muted ms-2 font-size-15">Uptime</span>
-                        </div>
-                    </div>
+                   
 
                     
                 </div>
@@ -114,7 +116,7 @@
                         </div>
                     </div>
     
-                    <h5 class=" mb-4" style="   font-famiLy: roboto; color:#00172A">Stations on Local Network</h5>
+                    <h6 class=" mb-4" style="   font-famiLy: roboto; color:#00172A">Stations on Local Network</h6>
     
                     <div class="table-responsive">
                         <table class="table table-centered datatable dt-responsive nowrap" data-bs-page-length="5" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
@@ -287,12 +289,13 @@
 
 
                 <div class="alert alert-info alert-dismissible fade show" role="alert" style="border-radius:16px;" >
-
-                    <h5 class="text-truncate mb-2" style=" font-family: roboto; font-weight: 500; color:#00172A ;">Continue Securing your Account!</h5>
-                    Please change your ssl password and increase account security.
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <h6 class="text-truncate mb-2" style=" font-family: roboto; color:#00172A ;">Continue Securing your Account!</h6>
+                   
+                    <p> Please change your ssl password and increase account security.</p>
+                   
 
-                    <button style=" margin-top: 15px; background:#0065de;" type="button" class="btn btn-primary btn-lg waves-effect waves-light">Change SSL Password</button>
+                    <button style="background:#0065de;" type="button" class="btn btn-primary btn-sm waves-effect waves-light">Change SSL Password</button>
                 </div>
 
 
@@ -311,19 +314,19 @@
                         <div class="card" style="border-radius:16px">
                             <div class="card-body">
                 
-                                <h4 class="card-title mb-4" style="font-famiLy: roboto; font-size:20px;">Activity Preview</h4>
+                                <h6 class="mb-3" style="font-famiLy: roboto; color:#00172A">Activity Preview</h6>
                                         
                                 <div class="">
                                     <img src="public/assets/images/cap.png" class="img-fluid" alt="Responsive image">
                                 </div>
-                                <h6 class="mb-0" style="margin-top:10px ;">Use the ShakeNet web or mobile apps to visualize and analyze your data in detail.</h6>
+                                <p class="mb-0" style="margin-top:10px ;">Use the ShakeNet web or mobile apps to visualize and analyze your data in detail.</p>
                                 
                             </div>
         
                             <div style="margin-left: 20px; margin-bottom: 20px;">
-                                <button style=" margin-top: 15px; background:#0065de;" type="button" class="btn btn-primary btn-lg waves-effect waves-light">ShakeNet Web</button>
+                                <button style=" background:#0065de;" type="button" class="btn btn-primary btn-sm waves-effect waves-light">ShakeNet Web</button>
                               
-                                <button style=" margin-top: 15px; background:#0065de;" type="button" class="btn btn-primary btn-lg waves-effect waves-light">Web App</button>
+                                <button style=" background:#0065de;" type="button" class="btn btn-primary btn-sm waves-effect waves-light">Web App</button>
         
         </div>
                         </div>
@@ -341,8 +344,8 @@
                     <div class="card-body">
                         <div class="d-flex">
                             <div class="flex-1 overflow-hidden">
-                                <h4 class="card-title font-size-20 mb-2" style="color:#0065de">Software tools</h4>
-                                <h6 class="mb-0">Download useful software for your shake!</h6>
+                                <h6 class="card-title  mb-2" style="color:#0065de">Software tools</h6>
+                                <p class="mb-0">Download useful software for your shake!</p>
                             </div>
                             <div class="text-primary ms-auto">
                               
@@ -350,83 +353,71 @@
                         </div>
                     </div>
 
-                   
-                  <!-- Nested row for local apps- END -->
+                    <div class="row">
                     
                     
-                </div>
-                   
-
-                <div class="row">
                 
-                    <div class="col-lg-6">
-                        
-                        <div class="card" style="border-radius:12px;">
-                            <div class="card-header bg-transparent ">
-                                <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-database-arrow-down"></i></h1>
-                                <h5 class="card-title mt-0" style="text-align:center ;">Data</h5>
-                                <p style="color:#0065de; text-align: center;">
-                                 <a href="ftp://rs.local/">Download</a> </p>
+                        <div class="col-lg-6">
+                            
+                            <div class="card" style="border-radius:12px;">
+                                <div class="card-header bg-transparent ">
+                                    <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-database-arrow-down"></i></h1>
+                                    <h5 class="card-title mt-0" style="text-align:center ;">Data</h5>
+                                    <p style="color:#0065de; text-align: center;">
+                                     <a href="ftp://rs.local/">Download</a> </p>
+                                </div>
+                              
                             </div>
-                          
-                        </div>
-
-                        <div class="card" style="border-radius:12px;">
-                            <div class="card-header bg-transparent ">
-                                <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-folder-download-outline"></i></h1>
-                                <h5 class="card-title mt-0" style="text-align:center ;">Logs</h5>
-                                <p style="color:#0065de; text-align: center;">
-                                 <a href="http://rs.local/api/logs">Download</a> </p>
-                            </div>
-                          
-                        </div>
-
-                        
-                    </div>
-                
-                    <div class="col-lg-6">
-                        <div class="card" style="border-radius:12px;">
-                            <div class="card-header bg-transparent ">
-                                <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-graphql"></i></h1>
-                                <h5 class="card-title mt-0" style="text-align:center ;">Swarm</h5>
-                                <p style="color:#0065de; text-align: center;">
-                                 <a href="http://rs.local/download/SWARM.zip">Download</a> </p>
-                            </div>
-                          
-                        </div>
-
-                        <div class="card" style="border-radius:12px;">
-                            <div class="card-header bg-transparent ">
-                                <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-cosine-wave"></i></h1>
-                                <h5 class="card-title mt-0" style="text-align:center ;">Helicorder</h5>
-                                <p style="color:#0065de; text-align: center;">
-                                 <a href="http://rs.local/download/SWARM.zip">Download</a> </p>
-                            </div>
-                          
-                        </div>
-
-
-                
-                    </div>
-                    
     
-
-                    <div class="col-lg-6">
-                        <div class="card" style="border-radius:12px;">
-                            <div class="card-header bg-transparent ">
-                                <h1 class="my-0 text-primary" style="text-align: center; font-size: 50px;"><i class="mdi mdi-cosine-wave me-3"></i></h3>
-                                
+                            <div class="card" style="border-radius:12px;">
+                                <div class="card-header bg-transparent ">
+                                    <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-folder-download-outline"></i></h1>
+                                    <h5 class="card-title mt-0" style="text-align:center ;">Logs</h5>
+                                    <p style="color:#0065de; text-align: center;">
+                                     <a href="http://rs.local/api/logs">Download</a> </p>
+                                </div>
+                              
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title mt-0" style="text-align:center ;">Helicorder</h5>
-                                <p class="card-text"style="text-align:center ;">Some quick example text to build on the card title and make up the bulk.</p>
-                                <a class="card-title" href="http://rs.local/heli" style="color:#0065de; text-align: center;">Download</a>
-                            </div>
+    
+                            
                         </div>
+                    
+                        <div class="col-lg-6">
+                            <div class="card border-roundslider" style="border-radius:12px;">
+                                <div class="card-header bg-transparent ">
+                                    <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-graphql"></i></h1>
+                                    <h5 class="card-title mt-0" style="text-align:center ;">Swarm</h5>
+                                    <p style="color:#0065de; text-align: center;">
+                                     <a href="http://rs.local/download/SWARM.zip">Download</a> </p>
+                                </div>
+                              
+                            </div>
+    
+                            <div class="card" style="border-radius:12px;">
+                                <div class="card-header bg-transparent ">
+                                    <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-cosine-wave"></i></h1>
+                                    <h5 class="card-title mt-0" style="text-align:center ;">Helicorder</h5>
+                                    <p style="color:#0065de; text-align: center;">
+                                     <a href="http://rs.local/heli">Download</a> </p>
+                                </div>
+                              
+                            </div>
+    
+    
+                    
+                        </div>
+                        
+    
+    
+    
                     </div>
-
-
+               
+                    
+                    
                 </div>
+                   
+
+                
                    
                 
                      
