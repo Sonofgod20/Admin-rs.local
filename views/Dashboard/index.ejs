@@ -27,14 +27,14 @@
     <div class="col-xl-12" >
         <div class="row">
             <div class="col-md-4">
-                <div class="card" style="border-radius: 20px;">
+                <div class="card" style="border-radius: 16px;">
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table ">
+                            <table class="table">
         
-                                <h4 class="card-title mb-4" style="font-famiLy: roboto; font-size:20px;">Station Details</h4>
+                                <h5 class="mb-3" style="font-famiLy: roboto; color:#00172A">Station Details</h5>
                                 <tbody>
-                                    <tr style="line-height: 1.5;">
+                                    <tr>
                                         <td style="text-align: right;">
                                             <label class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">Shake/Pi</label></td>
                                             <td style="vertical-align:middle ;">:</td>
@@ -52,7 +52,7 @@
                                                     </td>
                                                     </tr>
 
-                                                    <tr style="line-height: 1.5;">
+                                                    <tr>
                                                         <td style="text-align: right;">
                                                             <label class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">Latitude</label></td>
                                                             <td style="vertical-align:middle ;">:</td>
@@ -61,7 +61,7 @@
                                                             </td>
                                                             </tr>
 
-                                                            <tr style="line-height: 1.5;">
+                                                            <tr>
                                                                 <td style="text-align: right;">
                                                                     <label class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">Longitude</label></td>
                                                                     <td style="vertical-align:middle ;">:</td>
@@ -70,7 +70,7 @@
                                                                     </td>
                                                                     </tr>
 
-                                                                    <tr style="line-height: 1.5;">
+                                                                    <tr>
                                                                         <td style="text-align: right;">
                                                                             <label class="mb-0" style="color: rgba(105, 111, 121, 0.6); font-size:20px;">Elevation</label></td>
                                                                             <td style="vertical-align:middle;">:</td>
@@ -84,7 +84,7 @@
                         </div>
                     </div>
 
-                    <div class="card-body border-top py-3">
+                    <div class="card-body py-3">
                         <div class="text-truncate">
                             <span class="badge badge-soft-success  font-size-15"><i class="mdi mdi-menu-up"> </i> 0 Days 4 Hours 11 Minutes </span>
                             <span class="text-muted ms-2 font-size-15">Uptime</span>
@@ -114,7 +114,7 @@
                         </div>
                     </div>
     
-                    <h4 class="card-title mb-4" style="   font-famiLy: roboto; font-size:20px;">Stations on Local Network</h4>
+                    <h5 class=" mb-4" style="   font-famiLy: roboto; color:#00172A">Stations on Local Network</h5>
     
                     <div class="table-responsive">
                         <table class="table table-centered datatable dt-responsive nowrap" data-bs-page-length="5" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
@@ -288,7 +288,7 @@
 
                 <div class="alert alert-info alert-dismissible fade show" role="alert" style="border-radius:16px;" >
 
-                    <p class="text-truncate font-size-20 mb-2" style=" font-family: roboto; font-weight: 500; color:#00172A ;">Continue Securing your Account!</p>
+                    <h5 class="text-truncate mb-2" style=" font-family: roboto; font-weight: 500; color:#00172A ;">Continue Securing your Account!</h5>
                     Please change your ssl password and increase account security.
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 
@@ -358,47 +358,58 @@
                    
 
                 <div class="row">
+                
                     <div class="col-lg-6">
+                        
                         <div class="card" style="border-radius:12px;">
                             <div class="card-header bg-transparent ">
-                                <h1 class="my-0 text-primary" style="text-align: center; font-size: 50px;"><i class="mdi mdi-database-arrow-down me-3"></i></h3>
-                                
-                            </div>
-                            <div class="card-body">
+                                <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-database-arrow-down"></i></h1>
                                 <h5 class="card-title mt-0" style="text-align:center ;">Data</h5>
-                                <p class="card-text"style="text-align:center ;">Some quick example text to build on the card title and make up the bulk.</p>
-                                <a class="card-title" href="ftp://rs.local/" style="color:#0065de; text-align: center;">Download</a>
+                                <p style="color:#0065de; text-align: center;">
+                                 <a href="ftp://rs.local/">Download</a> </p>
                             </div>
+                          
                         </div>
+
+                        <div class="card" style="border-radius:12px;">
+                            <div class="card-header bg-transparent ">
+                                <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-folder-download-outline"></i></h1>
+                                <h5 class="card-title mt-0" style="text-align:center ;">Logs</h5>
+                                <p style="color:#0065de; text-align: center;">
+                                 <a href="http://rs.local/api/logs">Download</a> </p>
+                            </div>
+                          
+                        </div>
+
+                        
                     </div>
                 
                     <div class="col-lg-6">
                         <div class="card" style="border-radius:12px;">
                             <div class="card-header bg-transparent ">
-                                <h1 class="my-0 text-primary" style="text-align: center; font-size: 50px;"><i class="mdi mdi-graphql me-3"></i></h3>
-                                
-                            </div>
-                            <div class="card-body">
+                                <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-graphql"></i></h1>
                                 <h5 class="card-title mt-0" style="text-align:center ;">Swarm</h5>
-                                <p class="card-text"style="text-align:center ;">Some quick example text to build on the card title and make up the bulk.</p>
-                                <a class="card-title" href="http://rs.local/download/SWARM.zip  " style="color:#0065de; text-align: center;">Download</a>
+                                <p style="color:#0065de; text-align: center;">
+                                 <a href="http://rs.local/download/SWARM.zip">Download</a> </p>
                             </div>
+                          
                         </div>
-                    </div>
-                    
-                    <div class="col-lg-6">
+
                         <div class="card" style="border-radius:12px;">
                             <div class="card-header bg-transparent ">
-                                <h1 class="my-0 text-primary" style="text-align: center; font-size: 50px;"><i class="mdi mdi-folder-download-outline me-3"></i></h3>
-                                
+                                <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-cosine-wave"></i></h1>
+                                <h5 class="card-title mt-0" style="text-align:center ;">Helicorder</h5>
+                                <p style="color:#0065de; text-align: center;">
+                                 <a href="http://rs.local/download/SWARM.zip">Download</a> </p>
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title mt-0" style="text-align:center ;">Logs</h5>
-                                <p class="card-text"style="text-align:center ;">Some quick example text to build on the card title and make up the bulk.</p>
-                                <a class="card-title" href="http://rs.local/api/logs" style="color:#0065de; text-align: center;">Download</a>
-                            </div>
+                          
                         </div>
+
+
+                
                     </div>
+                    
+    
 
                     <div class="col-lg-6">
                         <div class="card" style="border-radius:12px;">
