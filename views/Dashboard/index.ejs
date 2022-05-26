@@ -1,6 +1,11 @@
 <%- contentFor('HeaderCss') %>
 <!-- roundslider css -->
 <link rel="stylesheet" href="public/assets/libs/round-slider/roundslider.min.css">
+
+
+
+
+
 <%- contentFor('breadcrumb') %>
 
 <!-- start page title -->
@@ -32,7 +37,7 @@
                         <div class="table-responsive ">
                             <table class="table table-striped align-middle">
         
-                                <h6 class="mb-2" style="font-famiLy: roboto; color:#00172A">Station Details</h6>
+                                <h6 class="mb-2" style="font-famiLy: roboto;">Station Details</h6>
                                 <tbody>
 
 
@@ -124,10 +129,10 @@
                         </div>
                     </div>
     
-                    <h6 class=" mb-4" style="   font-famiLy: roboto; color:#00172A">Stations on Local Network</h6>
+                    <h6 class=" mb-4" style="   font-famiLy: roboto;">Stations on Local Network</h6>
     
                     <div class="table-responsive">
-                        <table class="table table-centered datatable dt-responsive nowrap" data-bs-page-length="5" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                        <table class="table table-responsive datatable dt-responsive nowrap" data-bs-page-length="5" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                             <thead class="table-light">
                                 <tr>
                                     
@@ -322,11 +327,54 @@
                         <div class="card" style="border-radius:16px">
                             <div class="card-body">
                 
-                                <h6 class="mb-3" style="font-famiLy: roboto; color:#00172A">Activity Preview</h6>
+                                <h6 class="mb-3" style="font-famiLy: roboto;">Activity Preview</h6>
                                         
-                                <div class="">
-                                    <img src="public/assets/images/cap.png" class="img-fluid" alt="Responsive image">
+                             
+                                <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                                <div class="table-responsive">
+                                    <div id="graph" style=" height: 300px; width: auto;  "></div>
+
+                                    <script>
+
+                                var arrayLength = 50
+                                var newArray = []
+
+                                for(var i = 0; i < arrayLength; i++) {
+                                var y = Math.round(Math.random()*20) + 1
+                                newArray[i] = y
+                                }
+
+                                Plotly.plot('graph', [{
+                                y: newArray,
+                                mode: 'lines',
+                                line: {color: '#CD1A47'}
+                                
+                                }]);
+
+                                var cnt = 0;
+
+                                var interval = setInterval(function() {
+                                
+                                var y = Math.round(Math.random()*10) + 1
+                                newArray = newArray.concat(y)
+                                newArray.splice(0, 1)
+                                
+                                var data_update = {
+                                    y: [newArray]
+                                };
+                                
+                                Plotly.update('graph', data_update)
+                                
+                                if(cnt === 100) clearInterval(interval);
+                                }, 1000); 
+
+                          
+                                    </script>
                                 </div>
+                                
+
+                             
+
                                 <p class="mb-0" style="margin-top:10px ;">Use the ShakeNet web or mobile apps to visualize and analyze your data in detail.</p>
                                 
                             </div>
@@ -365,27 +413,27 @@
                     
                     
                 
-                        <div class="col-lg-5">
-                            
-                            <div class="card" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)">
-                                <div class="card-header bg-transparent">
-                                    <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-database-arrow-down"></i></h1>
-                                    <h5 class="card-title mt-0" style="text-align:center ;">Data</h5>
-                                    <p style="color:#0065de; text-align: center;">
-                                     <a href="ftp://rs.local/">Download</a> </p>
-                                </div>
-                              
-                            </div>
-    
-                            <div class="card" style="border-radius:12px;border: 2px solid rgb(232, 228, 228)">
-                                <div class="card-header bg-transparent ">
-                                    <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-folder-download-outline"></i></h1>
-                                    <h5 class="card-title mt-0" style="text-align:center ;">Logs</h5>
-                                    <p style="color:#0065de; text-align: center;">
-                                     <a href="http://rs.local/api/logs">Download</a> </p>
-                                </div>
-                              
-                            </div>
+                <div class="col-lg-5">
+                    
+                    <div class="card" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)">
+                        <div class="card-header bg-transparent">
+                            <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-database-arrow-down"></i></h1>
+                            <h5 class="card-title mt-0" style="text-align:center ;">Data</h5>
+                            <p style="color:#0065de; text-align: center;">
+                                <a href="ftp://rs.local/">Download</a> </p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="card" style="border-radius:12px;border: 2px solid rgb(232, 228, 228)">
+                        <div class="card-header bg-transparent ">
+                            <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-folder-download-outline"></i></h1>
+                            <h5 class="card-title mt-0" style="text-align:center ;">Logs</h5>
+                            <p style="color:#0065de; text-align: center;">
+                                <a href="http://rs.local/api/logs">Download</a> </p>
+                        </div>
+                        
+                    </div>
     
                             
                         </div>
@@ -637,7 +685,7 @@
 <!-- end row -->
 
 
-<!-- end row -->
+<!-- end row-->
 
 <%- contentFor('FooterJs') %>
 
@@ -663,6 +711,11 @@
 
 <!-- roundslider init -->
 <script src="public/assets/js/pages/roundslider.init.js"></script>
+
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
 
 
 <%- contentFor('BottomJs') %>
