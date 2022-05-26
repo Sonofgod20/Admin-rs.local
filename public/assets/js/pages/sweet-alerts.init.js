@@ -50,6 +50,43 @@ File: Sweetalert Js File
             )
         });
 
+
+
+
+
+
+       //Parameter
+       $('#sa-papa').click(function () {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "CAUTION! This is for OFFLINE applications ONLY. Data will not be forwarded to the Server and a Server Connection will not be established. Do not enable unless you plan to use the Raspberry Shake without an Internet connection.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, sure',
+            cancelButtonText: 'No, cancel!',
+            confirmButtonClass: 'btn btn-success mt-2',
+            cancelButtonClass: 'btn btn-danger ms-2 mt-2',
+            buttonsStyling: false
+        }).then(function (result) {
+            if (result.value) {
+                Swal.fire({
+                  title: 'Success!',
+                  text: 'Offline Mode Activated',
+                  icon: 'success'
+                })
+              } else if (
+                // Read more about handling dismissals
+                result.dismiss === Swal.DismissReason.cancel
+              ) {
+                Swal.fire({
+                  title: 'Cancelled',
+                  text: 'No changes have been made',
+                  icon: 'error'
+                })
+              }
+        });
+    });
+
         //Warning Message
         $('#sa-warning').click(function () {
             Swal.fire({
@@ -270,6 +307,14 @@ File: Sweetalert Js File
         //init
         $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
 }(window.jQuery),
+
+
+
+
+
+
+
+
 
 //initializing
     function ($) {
