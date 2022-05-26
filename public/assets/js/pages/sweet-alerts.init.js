@@ -91,7 +91,7 @@ File: Sweetalert Js File
         $('#sa-warning').click(function () {
             Swal.fire({
                 title: "Are you sure?",
-                text: "All changes are ok?",
+                text: "Password Confirmation Here",
                 icon: "warning",
                 showCancelButton: true,
                 confirmButtonColor: "#1cbb8c",
@@ -255,27 +255,25 @@ File: Sweetalert Js File
         $('#chaining-alert').click(function () {
             Swal.mixin({
                 input: 'text',
-                confirmButtonText: 'Next &rarr;',
+                confirmButtonText: 'Verify and Save &rarr;',
                 showCancelButton: true,
                 confirmButtonColor: "#0065de",
                 cancelButtonColor: "#74788d",
-                progressSteps: ['1', '2', '3']
+                progressSteps: ['1']
               }).queue([
                 {
-                  title: 'Question 1',
-                  text: 'Chaining swal2 modals is easy'
+                  title: 'Security',
+                  text: 'Enter your Password'
                 },
-                'Question 2',
-                'Question 3'
+               
               ]).then( function (result) {
                 if (result.value) {
                   Swal.fire({
+                    icon: 'success',
                     title: 'All done!',
                     html:
-                      'Your answers: <pre><code>' +
-                        JSON.stringify(result.value) +
-                      '</code></pre>',
-                    confirmButtonText: 'Lovely!'
+                      'The system will restart',
+                    confirmButtonText: 'Done'
                   })
                 }
               })
