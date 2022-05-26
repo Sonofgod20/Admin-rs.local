@@ -1983,7 +1983,7 @@ body[data-layout="horizontal"][data-layout-size="boxed"] .container-fluid, body[
     border-top: 2px dotted #f6f6f6; }
 
 .irs {
-  font-family: var(--bs-font-sans-serif); }
+  font-family: Roboto }
 
 .irs--round .irs-bar,
 .irs--round .irs-to,
@@ -2883,7 +2883,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td {
   border: none;
   background: #eff2f7;
   color: #212529;
-  font-family: var(--bs-font-sans-serif);
+  font-family: Roboto
   font-size: 0.9rem;
   padding: 5px 8px; }
 

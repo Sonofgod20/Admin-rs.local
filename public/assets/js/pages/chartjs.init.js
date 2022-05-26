@@ -62,16 +62,16 @@ File: ChartJs init Js File
                     fill: true,
                     lineTension: 0.5,
                     backgroundColor: "rgba(85, 110, 230, 0.2)",
-                    borderColor: "#5664d2",
+                    borderColor: "#0065de",
                     borderCapStyle: 'butt',
                     borderDash: [],
                     borderDashOffset: 0.0,
                     borderJoinStyle: 'miter',
-                    pointBorderColor: "#5664d2",
+                    pointBorderColor: "#0065de",
                     pointBackgroundColor: "#fff",
                     pointBorderWidth: 1,
                     pointHoverRadius: 5,
-                    pointHoverBackgroundColor: "#5664d2",
+                    pointHoverBackgroundColor: "#0065de",
                     pointHoverBorderColor: "#fff",
                     pointHoverBorderWidth: 2,
                     pointRadius: 1,
@@ -126,11 +126,11 @@ File: ChartJs init Js File
                 {
                     data: [300, 210],
                     backgroundColor: [
-                        "#5664d2",
+                        "#0065de",
                         "#ebeff2"
                     ],
                     hoverBackgroundColor: [
-                        "#5664d2",
+                        "#0065de",
                         "#ebeff2"
                     ],
                     hoverBorderColor: "#fff"
@@ -204,11 +204,11 @@ File: ChartJs init Js File
                 {
                     label: "Tablets",
                     backgroundColor: "rgba(84, 56, 220, 0.2)",
-                    borderColor: "#5664d2",
-                    pointBackgroundColor: "#5664d2",
+                    borderColor: "#0065de",
+                    pointBackgroundColor: "#0065de",
                     pointBorderColor: "#fff",
                     pointHoverBackgroundColor: "#fff",
-                    pointHoverBorderColor: "#5664d2",
+                    pointHoverBorderColor: "#0065de",
                     data: [28, 48, 40, 19, 96, 27, 100]
                 }
             ]
@@ -228,7 +228,7 @@ File: ChartJs init Js File
                     "#fcb92c",
                     "#1cbb8c",
                     "#ff3d60",
-                    "#5664d2"
+                    "#0065de"
                 ],
                 label: 'My dataset', // for legend
                 hoverBorderColor: "#fff"

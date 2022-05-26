@@ -9,7 +9,7 @@
 <%- contentFor('breadcrumb') %>
 
 <!-- start page title -->
-<div class="row">
+<!-- <div class="row">
     <div class="col-12">
         <div class="page-title-box d-flex align-items-center justify-content-between">
             <h4 class="mb-0">Dashboard</h4>
@@ -23,7 +23,7 @@
 
         </div>
     </div>
-</div>
+</div> -->
 <!-- end page title -->
 
 <%- contentFor('body') %>
@@ -32,7 +32,7 @@
     <div class="col-xl-12" >
         <div class="row">
             <div class="col-md-4">
-                <div class="card" style="border-radius: 16px;">
+                <div class="card" style="border-radius: 10px;">
                     <div class="card-body">
                         <div class="table-responsive ">
                             <table class="table table-striped align-middle">
@@ -116,7 +116,7 @@
               <!-- Station on local net-start -->
 
 
-              <div class="card" style="border-radius: 16px;">
+              <div class="card" style="border-radius: 10px;">
                 <div class="card-body">
                     <div class="dropdown float-end">
                         <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
@@ -255,7 +255,7 @@
             <div class="col-md-4">
 
 
-                <div class="alert alert-info alert-dismissible fade show" role="alert" style="border-radius:16px;" >
+                <div class="alert alert-info alert-dismissible fade show" role="alert" style="border-radius:10px;" >
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     <h6 class="text-truncate mb-2" style=" font-family: roboto; color:#00172A ;">Continue Securing your Account!</h6>
                    
@@ -278,7 +278,7 @@
 
 
 
-                        <div class="card" style="border-radius:16px">
+                        <div class="card" style="border-radius:10px">
                             <div class="card-body">
                 
                                 <h6 class="mb-3" style="font-famiLy: roboto;">Activity Preview</h6>
@@ -290,11 +290,11 @@
 
                                     <script>
 
-                                var arrayLength = 50
+                                var arrayLength = 100
                                 var newArray = []
 
                                 for(var i = 0; i < arrayLength; i++) {
-                                var y = Math.round(Math.random()*20) + 1
+                                var y = Math.round(Math.random()*5) + 1
                                 newArray[i] = y
                                 }
 
@@ -305,11 +305,11 @@
                                 
                                 }]);
 
-                                var cnt = 0;
+                                var cnt = 1;
 
                                 var interval = setInterval(function() {
                                 
-                                var y = Math.round(Math.random()*10) + 1
+                                var y = Math.round(Math.random()*5) + 1
                                 newArray = newArray.concat(y)
                                 newArray.splice(0, 1)
                                 
@@ -320,9 +320,9 @@
                                 Plotly.update('graph', data_update)
                                 
                                 if(cnt === 100) clearInterval(interval);
-                                }, 1000); 
+                                }, 300); 
 
-                          
+                      
                                     </script>
                                 </div>
                                 
@@ -341,7 +341,7 @@
         </div>
                         </div>
 
-                        <div class="card" style="border-radius:16px ;">
+                        <div class="card" style="border-radius:10px ;">
                             <div class="card-body">
                 
                                 <h4 class="card-title mb-4" style="font-famiLy: roboto; font-size:20px;">System Status</h4>
@@ -399,7 +399,7 @@
 
 
 <div class="col-md-4">
-                <div class="card" style="border-radius:16px;">
+                <div class="card" style="border-radius:10px; padding: 10px;">
                     <div class="card-body">
                         <div class="d-flex">
                             <div class="flex-1 overflow-hidden">
@@ -418,7 +418,7 @@
                 
                 <div class="col-lg-5">
                     
-                    <div class="card" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)">
+                    <div class="card shad" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)">
                         <div class="card-header bg-transparent">
                             <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-database-arrow-down"></i></h1>
                             <h5 class="card-title mt-0" style="text-align:center ;">Data</h5>
@@ -428,7 +428,7 @@
                         
                     </div>
 
-                    <div class="card" style="border-radius:12px;border: 2px solid rgb(232, 228, 228)">
+                    <div class="card shad" style="border-radius:12px;border: 2px solid rgb(232, 228, 228)">
                         <div class="card-header bg-transparent ">
                             <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-folder-download-outline"></i></h1>
                             <h5 class="card-title mt-0" style="text-align:center ;">Logs</h5>
@@ -443,26 +443,29 @@
                     
                         <div class="col-lg-5">
 
-                            <div class="card" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)">
+                            <div class="card shad" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)"
+                                title="With Swarm: enjoy, explore, discover and understand earthquakes in a simple way">
                                 <div class="card-header bg-transparent ">
                                     <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-graphql"></i></h1>
                                     <h5 class="card-title mt-0" style="text-align:center ;">Swarm</h5>
                                     <p style="color:#0065de; text-align: center;">
-                                     <a href="http://rs.local/download/SWARM.zip">Download</a> </p>
+                                        <a href="http://rs.local/download/SWARM.zip">Download</a>
+                                    </p>
                                 </div>
-                              
+                            
                             </div>
-    
-                            <div class="card" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)">
+                            
+                            <div class="card shad" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)"
+                                title=" View 12 hours of data at a time, updates every 2 minutes">
                                 <div class="card-header bg-transparent ">
                                     <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-cosine-wave"></i></h1>
                                     <h5 class="card-title mt-0" style="text-align:center ;">Helicorder</h5>
                                     <p style="color:#0065de; text-align: center;">
-                                     <a href="http://rs.local/heli">Download</a> </p>
+                                        <a href="http://rs.local/heli">Download</a>
+                                    </p>
                                 </div>
-                              
+                            
                             </div>
-    
     
                     
                         </div>
@@ -495,7 +498,7 @@
                             <span class="text-muted ms-2">From previous </span>
                         </div> -->
 
-                        <div class="card" style="border-radius:16px;">
+                        <div class="card" style="border-radius:10px; padding: 10px;">
                             <div class="card-body">
                                 <div class="d-flex">
                                     <div class="flex-1 overflow-hidden">
@@ -519,22 +522,24 @@
                 
                             <div class="col-lg-5">
                                 
-                                <div class="card" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)">
+                                <div class="card shad" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)"  
+                                title="Global map with the latest earthquake activities">
                                     <div class="card-header bg-transparent">
                                         <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-database-arrow-down"></i></h1>
                                         <h5 class="card-title mt-0" style="text-align:center ;">Station View</h5>
                                         <p style="color:#0065de; text-align: center;">
-                                         <a href="#">Open</a> </p>
+                                         <a href="https://stationview.raspberryshake.org/">Open</a> </p>
                                     </div>
                                   
                                 </div>
         
-                                <div class="card" style="border-radius:12px;border: 2px solid rgb(232, 228, 228)">
+                                <div class="card shad" style="border-radius:12px;border: 2px solid rgb(232, 228, 228)" 
+                                title="View data for all stations, all channels, over all time!">
                                     <div class="card-header bg-transparent ">
                                         <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-folder-download-outline"></i></h1>
                                         <h5 class="card-title mt-0" style="text-align:center ;">Data View</h5>
                                         <p style="color:#0065de; text-align: center;">
-                                         <a href="#">Open</a> </p>
+                                         <a href="https://dataview.raspberryshake.org/">Open</a> </p>
                                     </div>
                                   
                                 </div>
@@ -544,22 +549,24 @@
                         
                             <div class="col-lg-5">
     
-                                <div class="card" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)">
+                                <div class="card shad" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)" 
+                                title="P-wave and S-wave picker to locate epicenters of earthquakes">
                                     <div class="card-header bg-transparent ">
                                         <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-graphql"></i></h1>
                                         <h5 class="card-title mt-0" style="text-align:center ;">Eq Locator</h5>
                                         <p style="color:#0065de; text-align: center;">
-                                         <a href="#">Open</a> </p>
+                                         <a href="https://locator.raspberryshake.org/">Open</a> </p>
                                     </div>
                                   
                                 </div>
         
-                                <div class="card" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)">
+                                <div class="card shad" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)" 
+                                title="Create and download audio files of the latest earthquakes">
                                     <div class="card-header bg-transparent ">
                                         <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-cosine-wave"></i></h1>
                                         <h5 class="card-title mt-0" style="text-align:center ;">Eq Sound</h5>
                                         <p style="color:#0065de; text-align: center;">
-                                         <a href="#">Open</a> </p>
+                                         <a href="https://sound.raspberryshake.org/">Open</a> </p>
                                     </div>
                                   
                                 </div>

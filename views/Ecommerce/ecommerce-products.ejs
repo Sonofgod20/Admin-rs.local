@@ -18,13 +18,12 @@
 <link href="public/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
 <%- contentFor('breadcrumb') %>
-
 <div class="row">
     <div class="col-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
             <h4 class="mb-sm-0">Settings</h4>
 
-           
+
 
         </div>
     </div>
@@ -32,388 +31,464 @@
 
 <%- contentFor('body') %>
 
-<div class="col-xl-12">
-    
-    <div class="card">
-        <div class="card-body">
+    <div class="col-xl-12">
 
-      
-
-            <div class="row">
-                <div class="col-md-2 table-bordered" style="padding-top:15px ;">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link mb-2 active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">General</a>
-                    <a class="nav-link mb-2" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Data</a>
-                    <a class="nav-link mb-2" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Network</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Data Casting</a>
-                    <a class="nav-link" id="v-pills-security-tab" data-bs-toggle="pill" href="#v-pills-security" role="tab" aria-controls="v-pills-security" aria-selected="false">Security</a>    
-                
-                
-                </div>
-                </div>
-
-                <div class="col-md-10">
-                    <div class="tab-content text-muted mt-4 mt-md-0" id="v-pills-tabContent">
-                       
-                       
-                        <div class="tab-pane fade active show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                            
-                                
-                        <div class="row">
-
-                            <div class="col-md-5">
-                                <H5>Configure your location and profile</H5>
-                                <p>
-                                    Food truck fixie locavore, accusamus mcsweeney's marfa nulla
-                                    single-origin coffee squid. Exercitation +1 labore velit, blog
-                                    sartorial PBR leggings next level wes anderson artisan four loko
-                                    farm-to-table craft beer twee. Qui photo booth letterpress,
-                                    commodo enim craft beer mlkshk.
-                                </p>
-                                <label class="form-label mt-2" for="input-repeat">How will your use your Shake?</label>
-                                <select class="form-control select2">
-                                    <option>Select</option>
-                                
-                                        <option value="AK">Hobbie</option>
-                                        <option value="AK">Aftershock Studies</option>
-                                        <option value="HI">Campaign seismic survey</option>
-                                        <option value="CA">Education</option>
-                                        <option value="NV">Glaciers</option>
-                                        <option value="OR">Microseismic studies</option>
-                                        <option value="CA">Monitoring induced seismicity</option>
-                                        <option value="NV">Research</option>
-                                        <option value="OR">Seismic observatory</option>
-                                        <option value="CA">Structural monitoring</option>
-                                        <option value="NV">Volcano monitoring</option>
-                                        <option value="OR">Other</option>
-                    
-                                
-                                </select>
-
-                                <div class="mt-2">
-                                    <label class="form-label" for="input-repeat">Full Name</label>
-                                    <input id="input-repeat" class="form-control input-mask" inputmode="text" kl_vkbd_parsed="true">
-                                  
-                                </div>
-                             
-                                <div class="mt-2">
-                                    <label class="form-label" for="input-email">Email address:</label>
-                                    <input id="input-email" class="form-control input-mask" data-inputmask="'alias': 'email'" inputmode="email" kl_vkbd_parsed="true">
-                                  
-                                </div>
-                
-
-
-                    <button style="font-family: roboto; background:#0065de; margin-bottom: 15px;" type="button" class=" mt-3 btn btn-primary waves-effect waves-light" id="sa-warning">Save</button>
-                            
-                            </div>
-
-                            <div class="col-md-7">
-
-    <!-- table 1 map start-->
-                                <div class="table-responsive">
-                                    <h5>Set your Location</h5>
-                                    <p>Important: Be sure to update your location every time you move your device!</p>
-                                  
-                                    <table class="table table-editable table-nowrap align-middle table-edits  table-borderless">
-                                        
-                                        <thead>
-                                            <tr style="cursor: pointer;">
-
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td> 
-                                                    <div id="gmaps-markers" class="gmaps"></div>
-                                                </td>
-                                                
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                                <!-- table 2 start-->
-
-                                <div class="table-responsive">
-                                  
-                                    <table class="table table-editable table-nowrap align-middle table-edits  table-borderless">
-                                        
-                                        <thead>
-                                            <tr style="cursor: pointer;">
-
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td> 
-                                                    
-                                                    <label for="example-number-input" class=" col-form-label">Latitude</label>
-                                                   
-                                                        <input class="form-control" type="number" value="8.379" id="example-number-input" kl_vkbd_parsed="true">
-                                                   
-                                                </td>
-
-                                                <td> 
-                                                    
-                                                    <label for="example-number-input" class=" col-form-label">Longitude</label>
-                                                   
-                                                        <input class="form-control" type="number" value="-82.395698" id="example-number-input" kl_vkbd_parsed="true">
-                                                   
-                                                </td>
-                                              
-                                                
-                                            </tr>
-
-                                            <tr>
-
-                                                <td> 
-                                                    
-                                                <label for="example-number-input" class="col-form-label">Total floors in building</label>
-                                               
-                                                    <input class="form-control" type="number" value="2" id="example-number-input" kl_vkbd_parsed="true">
-                                               
-                                            </td>
-
-                                            <td> 
-                                                    
-                                                <label for="example-number-input" class="col-form-label">Elevation in Meters</label>
-                                               
-                                                    <input class="form-control" type="number" value="100" id="example-number-input" kl_vkbd_parsed="true">
-                                               
-                                            </td>
-
-                                            </tr>
-
-                                            <tr>
-
-                                                <td> 
-                                                    
-                                                <label for="example-number-input" class="col-form-label">Building Floor instrument is installed on</label>
-                                               
-                                                    <input class="form-control" type="number" value="2" id="example-number-input" kl_vkbd_parsed="true">
-                                               
-                                            </td>
-
-                                           
-                                            </tr>
+        <div class="card">
+            <div class="card-body">
 
 
 
-                                        </tbody>
-                                    </table>
-                                </div>
-     
-                                          
-                                            
-
-                                
-                                            
-                                    
-                                 
-                            </div>
-
-                        </div>
-
-
-                           
-                            
-                            
-
-                        </div>
+                <div class="row">
+                    <div class="col-md-2 table-bordered" style="padding-top:15px ;">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <a class="nav-link mb-2 active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                href="#v-pills-home" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">General</a>
+                            <a class="nav-link mb-2" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+                                aria-selected="false">Data</a>
+                            <a class="nav-link mb-2" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+                                aria-selected="false">Network</a>
+                            <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings"
+                                role="tab" aria-controls="v-pills-settings" aria-selected="false">Data Casting</a>
+                            <a class="nav-link" id="v-pills-security-tab" data-bs-toggle="pill" href="#v-pills-security"
+                                role="tab" aria-controls="v-pills-security" aria-selected="false">Security</a>
 
 
-
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                            <p>
-                                Food truck fixie locavore, accusamus mcsweeney's marfa nulla
-                                single-origin coffee squid. Exercitation +1 labore velit, blog
-                                sartorial PBR leggings next level wes anderson artisan four loko
-                                farm-to-table craft beer twee. Qui photo booth letterpress,
-                                commodo enim craft beer mlkshk.
-                            </p>
-                            <p class="mb-0"> Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna 8-bit</p>
-                        </div>
-                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                            <p>
-                                Etsy mixtape wayfarers, ethical wes anderson tofu before they
-                                sold out mcsweeney's organic lomo retro fanny pack lo-fi
-                                farm-to-table readymade. Messenger bag gentrify pitchfork
-                                tattooed craft beer, iphone skateboard locavore carles etsy
-                                salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
-                                Leggings gentrify squid 8-bit cred.
-                            </p>
-                            <p class="mb-0">DIY synth PBR banksy irony.
-                                    Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh
-                                    mi whatever gluten-free.</p>
-                        </div>
-
-
-                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                           
-                        <div class="row">
-
-                            <div class="col-md-5">
-                           
-                        
-                                <h5>Send your data to different places</h5>
-                                <p>Use for Local Seedlink server, used to support both Swarm and the local helicorder plots,
-                                 and to the cloud data server, used as part of back-end processing of Raspberry Shake network data and to support the online global map of Raspberry Shake stations, viewable <a href="https://stationview.raspberryshake.org/">here</a></p>
-                
-                                <div class="table-responsive">
-                                    <table class="table table-editable table-nowrap align-middle table-edits table-striped table-borderless">
-                                        <thead>
-                                            <tr style="cursor: pointer;">
-                                                <th>Name</th>
-                                                <th>Target Host IP</th>
-                                                <th>Port</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td> 
-                                                    <input id="input-repeat" class="form-control input-mask"  
-                                                    inputmode="text" kl_vkbd_parsed="true">
-                                                </td>
-                                                
-                                                <td>
-
-                                                    <input id="input-ip" class="form-control input-mask" data-inputmask="'alias': 'ip'" 
-                                                    inputmode="numeric" kl_vkbd_parsed="true">
-                                
-
-                                                </td>
-
-                                                <td> 
-                                                    <input id="input-repeat" class="form-control input-mask"  
-                                                    inputmode="text" kl_vkbd_parsed="true">
-                                                </td>
-
-                                            </tr>
-
-                                            <tr>
-                                                <td> 
-                                                <button style="font-family: roboto; background:#0065de;" 
-                                                type="button" class="btn btn-primary waves-effect waves-light" id="sa-warning">Add</button>
-                                                </td> 
-                                            </tr>
-                                          
-                                            
-
-                                
-                                            
-                                    
-                                        </tbody>
-                                    </table>
-                                </div>
-                         
-                                
-                            </div>
-
-                            <div class="col-md-7">
-                              
-                                <h4 class="card-title">Data Casting</h4>
-                        
-                                <div class="table-responsive">
-                                    <table class="table table-editable table-nowrap align-middle table-edits table-striped">
-                                        <thead>
-                                            <tr style="cursor: pointer;">
-                                                <th>Name</th>
-                                                <th>Ip</th>
-                                                <th>Port</th>
-                                                <th>Edit</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr data-id="1" style="cursor: pointer;">
-                                                <td data-field="name">Remote-Project</td>
-                                                <td data-field="id">10.45.25.108</td>
-                                                <td data-field="age">8080</td>
-                                
-                                                <td>
-                                                    <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
-                                                        <i class="fas fa-pencil-alt"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                          
-                                            <tr data-id="1" style="cursor: pointer;">
-                                                <td data-field="name">Local-Projet</td>
-                                                <td data-field="id">192.168.1.25</td>
-                                                <td data-field="age">8000</td>
-                                
-                                                <td>
-                                                    <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
-                                                        <i class="fas fa-pencil-alt"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr data-id="1" style="cursor: pointer;">
-                                                <td data-field="name">Office-Pc</td>
-                                                <td data-field="id">10.15.125.12</td>
-                                                <td data-field="age">8080</td>
-                                
-                                                <td>
-                                                    <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
-                                                        <i class="fas fa-pencil-alt"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr data-id="1" style="cursor: pointer;">
-                                                <td data-field="name">Office-Pc-miami</td>
-                                                <td data-field="id">10.15.125.25</td>
-                                                <td data-field="age">1035</td>
-                                
-                                                <td>
-                                                    <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
-                                                        <i class="fas fa-pencil-alt"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            
-                                    
-                                        </tbody>
-                                    </table>
-                                </div>
-                         
-                            
-                        </div>
-
-                        </div>
-                           
-                            
-                        
-                        </div>
-
-
-                        <div class="tab-pane fade" id="v-pills-security" role="tabpanel" aria-labelledby="v-pills-security-tab">
-                            <p>
-                              :D fund seitan letterpress, keytar raw denim keffiyeh etsy
-                                art party before they sold out master cleanse gluten-free squid
-                                scenester freegan cosby sweater. Fanny pack portland seitan DIY,
-                                art party locavore wolf cliche high life echo park Austin. Cred
-                                vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
-                                farm-to-table.
-                            </p>
-                            <p class="mb-0">Fanny pack portland seitan DIY,
-                                art party locavore wolf cliche high life echo park Austin. Cred
-                                vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
-                                farm-to-table.
-                            </p>
                         </div>
                     </div>
+
+                    <div class="col-md-10">
+                        <div class="tab-content text-muted mt-4 mt-md-0" id="v-pills-tabContent">
+
+
+                            <div class="tab-pane fade active show" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab">
+
+
+                                <div class="row">
+
+                                    <div class="col-md-5">
+                                        <H5>Configure your location and profile</H5>
+                                        <p>
+                                            Food truck fixie locavore, accusamus mcsweeney's marfa nulla
+                                            single-origin coffee squid. Exercitation +1 labore velit, blog
+                                            sartorial PBR leggings next level wes anderson artisan four loko
+                                            farm-to-table craft beer twee. Qui photo booth letterpress,
+                                            commodo enim craft beer mlkshk.
+                                        </p>
+                                        <label class="form-label mt-2" for="input-repeat">How will your use your
+                                            Shake?</label>
+                                        <select class="form-control select2">
+                                            <option>Select</option>
+
+                                            <option value="AK">Hobbie</option>
+                                            <option value="AK">Aftershock Studies</option>
+                                            <option value="HI">Campaign seismic survey</option>
+                                            <option value="CA">Education</option>
+                                            <option value="NV">Glaciers</option>
+                                            <option value="OR">Microseismic studies</option>
+                                            <option value="CA">Monitoring induced seismicity</option>
+                                            <option value="NV">Research</option>
+                                            <option value="OR">Seismic observatory</option>
+                                            <option value="CA">Structural monitoring</option>
+                                            <option value="NV">Volcano monitoring</option>
+                                            <option value="OR">Other</option>
+
+
+                                        </select>
+
+                                        <div class="mt-2">
+                                            <label class="form-label" for="input-repeat">Full Name</label>
+                                            <input id="input-repeat" class="form-control input-mask" inputmode="text"
+                                                kl_vkbd_parsed="true">
+
+                                        </div>
+
+                                        <div class="mt-2">
+                                            <label class="form-label" for="input-email">Email address:</label>
+                                            <input id="input-email" class="form-control input-mask"
+                                                data-inputmask="'alias': 'email'" inputmode="email"
+                                                kl_vkbd_parsed="true">
+
+                                        </div>
+
+
+
+                                        <button style="font-family: roboto; background:#0065de; margin-bottom: 15px;"
+                                            type="button" class=" mt-3 btn btn-primary waves-effect waves-light"
+                                            id="sa-warning">Save</button>
+
+                                    </div>
+
+
+                                    <!-- table 1 map start-->
+                                    <div class="col-md-7">
+
+
+                                        <div class="table-responsive">
+                                            <h5>Set your Location</h5>
+                                            <p>Important: Be sure to update your location every time you move your
+                                                device!</p>
+
+                                            <table
+                                                class="table table-editable table-nowrap align-middle table-edits  table-borderless">
+
+                                                <thead>
+                                                    <tr style="cursor: pointer;">
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div id="gmaps-markers" class="gmaps"></div>
+                                                        </td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <!-- table 2 start-->
+
+                                        <div class="table-responsive">
+
+                                            <table
+                                                class="table table-editable table-nowrap align-middle table-edits  table-borderless">
+
+                                                <thead>
+                                                    <tr style="cursor: pointer;">
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+
+                                                            <label for="example-number-input"
+                                                                class=" col-form-label">Latitude</label>
+
+                                                            <input class="form-control" type="number" value="8.379"
+                                                                id="example-number-input" kl_vkbd_parsed="true">
+
+                                                        </td>
+
+                                                        <td>
+
+                                                            <label for="example-number-input"
+                                                                class=" col-form-label">Longitude</label>
+
+                                                            <input class="form-control" type="number" value="-82.395698"
+                                                                id="example-number-input" kl_vkbd_parsed="true">
+
+                                                        </td>
+
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>
+
+                                                            <label for="example-number-input"
+                                                                class="col-form-label">Total floors in building</label>
+
+                                                            <input class="form-control" type="number" value="2"
+                                                                id="example-number-input" kl_vkbd_parsed="true">
+
+                                                        </td>
+
+                                                        <td>
+
+                                                            <label for="example-number-input"
+                                                                class="col-form-label">Elevation in Meters</label>
+
+                                                            <input class="form-control" type="number" value="100"
+                                                                id="example-number-input" kl_vkbd_parsed="true">
+
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>
+
+                                                            <label for="example-number-input"
+                                                                class="col-form-label">Building Floor instrument is
+                                                                installed on</label>
+
+                                                            <input class="form-control" type="number" value="2"
+                                                                id="example-number-input" kl_vkbd_parsed="true">
+
+                                                        </td>
+
+
+                                                    </tr>
+
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+
+
+
+
+                            </div>
+
+
+                            <!-- DATA SECTION start-->
+
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            
+                                <div class="row">
+                            
+                                    <div class="col-md-5">
+                            
+                                        <H5>Configure your location and profile</H5>
+                                        <p>
+                                            Activate to send real-time data to the Raspberry Shake Server. This data will be used for
+                                            local, regional and global earthquake location. 
+                                        </p>
+                                        <label class="form-label" for="input-repeat">Data sharing settings</label>
+                                        <div class="form-check form-switch mb-3" dir="ltr">
+                                            <input type="checkbox" class="form-check-input " id="customSwitch1" checked="" kl_vkbd_parsed="true">
+                                            <label class="form-check-label" for="customSwitch1">Fordward Data</label>
+                                        </div>
+                            
+                            
+                            
+                                    </div>
+                            
+                                    <div class="col-md-7">
+                            
+                                        <H5>Global Seismic Community</H5>
+                                        <p>Forwarding your data you will be participating in the global seismic community.
+                                        </p>
+                                      
+                                    </div>
+                            
+                            
+                                </div>
+                            
+                            </div>
+
+
+
+
+
+                            <!-- NETWORK SECTION start-->
+
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab">
+
+                                <p>
+                                    Etsy mixtape wayfarers, ethical wes anderson tofu before they
+                                    sold out mcsweeney's organic lomo retro fanny pack lo-fi
+                                    farm-to-table readymade. Messenger bag gentrify pitchfork
+                                    tattooed craft beer, iphone skateboard locavore carles etsy
+                                    salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
+                                    Leggings gentrify squid 8-bit cred.
+                                </p>
+                                <p class="mb-0">DIY synth PBR banksy irony.
+                                    Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh
+                                    mi whatever gluten-free.</p>
+                            </div>
+
+
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+
+                                <div class="row">
+
+                                    <div class="col-md-5">
+
+
+                                        <h5>Send your data to different places</h5>
+                                        <p>Use for Local Seedlink server, used to support both Swarm and the local
+                                            helicorder plots,
+                                            and to the cloud data server, used as part of back-end processing of
+                                            Raspberry Shake network data and to support the online global map of
+                                            Raspberry Shake stations, viewable <a
+                                                href="https://stationview.raspberryshake.org/">here</a></p>
+
+                                        <div class="table-responsive">
+                                            <table
+                                                class="table table-editable table-nowrap align-middle table-edits table-striped table-borderless">
+                                                <thead>
+                                                    <tr style="cursor: pointer;">
+                                                        <th>Name</th>
+                                                        <th>Target Host IP</th>
+                                                        <th>Port</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <input id="input-repeat" class="form-control input-mask"
+                                                                inputmode="text" kl_vkbd_parsed="true">
+                                                        </td>
+
+                                                        <td>
+
+                                                            <input id="input-ip" class="form-control input-mask"
+                                                                data-inputmask="'alias': 'ip'" inputmode="numeric"
+                                                                kl_vkbd_parsed="true">
+
+
+                                                        </td>
+
+                                                        <td>
+                                                            <input id="input-repeat" class="form-control input-mask"
+                                                                inputmode="text" kl_vkbd_parsed="true">
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <button style="font-family: roboto; background:#0065de;"
+                                                                type="button"
+                                                                class="btn btn-primary waves-effect waves-light"
+                                                                id="sa-warning">Add</button>
+                                                        </td>
+                                                    </tr>
+
+
+
+
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="col-md-7">
+
+                                        <h4 class="card-title">Data Casting</h4>
+
+                                        <div class="table-responsive">
+                                            <table
+                                                class="table table-editable table-nowrap align-middle table-edits table-striped">
+                                                <thead>
+                                                    <tr style="cursor: pointer;">
+                                                        <th>Name</th>
+                                                        <th>Ip</th>
+                                                        <th>Port</th>
+                                                        <th>Edit</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr data-id="1" style="cursor: pointer;">
+                                                        <td data-field="name">Remote-Project</td>
+                                                        <td data-field="id">10.45.25.108</td>
+                                                        <td data-field="age">8080</td>
+
+                                                        <td>
+                                                            <a class="btn btn-outline-secondary btn-sm edit"
+                                                                title="Edit">
+                                                                <i class="fas fa-pencil-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr data-id="1" style="cursor: pointer;">
+                                                        <td data-field="name">Local-Projet</td>
+                                                        <td data-field="id">192.168.1.25</td>
+                                                        <td data-field="age">8000</td>
+
+                                                        <td>
+                                                            <a class="btn btn-outline-secondary btn-sm edit"
+                                                                title="Edit">
+                                                                <i class="fas fa-pencil-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr data-id="1" style="cursor: pointer;">
+                                                        <td data-field="name">Office-Pc</td>
+                                                        <td data-field="id">10.15.125.12</td>
+                                                        <td data-field="age">8080</td>
+
+                                                        <td>
+                                                            <a class="btn btn-outline-secondary btn-sm edit"
+                                                                title="Edit">
+                                                                <i class="fas fa-pencil-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-id="1" style="cursor: pointer;">
+                                                        <td data-field="name">Office-Pc-miami</td>
+                                                        <td data-field="id">10.15.125.25</td>
+                                                        <td data-field="age">1035</td>
+
+                                                        <td>
+                                                            <a class="btn btn-outline-secondary btn-sm edit"
+                                                                title="Edit">
+                                                                <i class="fas fa-pencil-alt"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+
+                            <div class="tab-pane fade" id="v-pills-security" role="tabpanel"
+                                aria-labelledby="v-pills-security-tab">
+                                <p>
+                                    :D fund seitan letterpress, keytar raw denim keffiyeh etsy
+                                    art party before they sold out master cleanse gluten-free squid
+                                    scenester freegan cosby sweater. Fanny pack portland seitan DIY,
+                                    art party locavore wolf cliche high life echo park Austin. Cred
+                                    vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
+                                    farm-to-table.
+                                </p>
+                                <p class="mb-0">Fanny pack portland seitan DIY,
+                                    art party locavore wolf cliche high life echo park Austin. Cred
+                                    vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
+                                    farm-to-table.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
                 </div>
-
-
-
-
             </div>
         </div>
+        <!-- end card -->
     </div>
-    <!-- end card -->
-</div>
 
 <%- contentFor('FooterJs') %>
 

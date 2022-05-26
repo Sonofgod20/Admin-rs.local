@@ -41,7 +41,7 @@ var options = {
     legend: {
         show: false,
     },
-    colors: ['#5664d2', '#1cbb8c'],
+    colors: ['#0065de', '#1cbb8c'],
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 };
 
@@ -70,7 +70,7 @@ var options = {
     legend: {
         show: false,
     },
-    colors: ['#5664d2', '#1cbb8c', '#eeb902'],
+    colors: ['#0065de', '#1cbb8c', '#eeb902'],
 
 };
 
@@ -93,7 +93,7 @@ var radialoptions = {
     dataLabels: {
         enabled: false
     },
-    colors: ['#5664d2'],
+    colors: ['#0065de'],
     stroke: {
         lineCap: 'round'
     },
@@ -176,7 +176,7 @@ var options = {
         width: [3],
         curve: 'smooth'
     },
-    colors: ['#5664d2'],
+    colors: ['#0065de'],
 
     tooltip: {
         fixed: {
@@ -218,7 +218,7 @@ var options = {
         width: [3],
         curve: 'smooth'
     },
-    colors: ['#5664d2'],
+    colors: ['#0065de'],
     tooltip: {
         fixed: {
             enabled: false
@@ -259,7 +259,7 @@ var options = {
         width: [3],
         curve: 'smooth'
     },
-    colors: ['#5664d2'],
+    colors: ['#0065de'],
     tooltip: {
         fixed: {
             enabled: false
