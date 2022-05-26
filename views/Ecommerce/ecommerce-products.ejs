@@ -73,11 +73,8 @@
                                     <div class="col-md-5">
                                         <H5>Configure your location and profile</H5>
                                         <p>
-                                            Food truck fixie locavore, accusamus mcsweeney's marfa nulla
-                                            single-origin coffee squid. Exercitation +1 labore velit, blog
-                                            sartorial PBR leggings next level wes anderson artisan four loko
-                                            farm-to-table craft beer twee. Qui photo booth letterpress,
-                                            commodo enim craft beer mlkshk.
+                                            Select exactly where your Raspberry Shake lives, down to the building and not just the city or
+                                            town. This is critical for accurate earthquake locations. You can update this information at any time.
                                         </p>
                                         <label class="form-label mt-2" for="input-repeat">How will your use your
                                             Shake?</label>
@@ -271,31 +268,87 @@
                                             <label class="form-check-label" for="customSwitch1">Fordward Data</label>
                                             
                                         </div>
-                                        <label class="form-label mt-2" for="input-repeat">Helicorder Scaling Value</label>
-                                        <select class="form-control select2">
-                                            <option>Select</option>
-
-                                            <option value="AK">0.1</option>
-                                            <option value="AK">0.2</option>
-                                            <option value="HI">0.3</option>
-                                            <option value="CA">0.4</option>
-                                            <option value="NV">0.5</option>
-                                            <option value="OR">0.6</option>
-                                            <option value="CA">0.7</option>
-                                            <option value="NV">0.8</option>
-                                            <option value="OR">0.9</option>
-                                            <option value="CA">1.0</option>
-                                            <option value="OR">1.1</option>
-                                            <option value="OR">1.2</option>
-                                            <option value="OR">1.3</option>
-                                            <option value="OR">1.4</option>
-                                            <option value="OR">1.5</option>
+                                      
 
 
-                                        </select>
+                                        <div class="table-responsive">
+                                            <table
+                                                class="table table-editable table-nowrap align-middle table-edits table-striped table-borderless">
+                                                <thead>
+                                                    <tr style="cursor: pointer;">
+                                                        <th style="font-size:13px ;">Helicorder Scaling Value</th>
+                                                        
+                                                            <th id="tooltip-container">
+                                                                <span
+                                                                data-bs-container="#tooltip-container" 
+                                                                data-bs-toggle="tooltip" data-bs-placement="right"
+                                                                title="Number of days to save waveforms data on disk" 
+                                                                style="font-size:13px ;">Waveform Data Saving</span>
+                                                            </th>
+                                                          
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            
+
+                                                            <select class="form-control select2">
+                                                                <option>Select</option>
+                    
+                                                                <option value="AK">0.1</option>
+                                                                <option value="AK">0.2</option>
+                                                                <option value="HI">0.3</option>
+                                                                <option value="CA">0.4</option>
+                                                                <option value="NV">0.5</option>
+                                                                <option value="OR">0.6</option>
+                                                                <option value="CA">0.7</option>
+                                                                <option value="NV">0.8</option>
+                                                                <option value="OR">0.9</option>
+                                                                <option value="CA">1.0</option>
+                                                                <option value="OR">1.1</option>
+                                                                <option value="OR">1.2</option>
+                                                                <option value="OR">1.3</option>
+                                                                <option value="OR">1.4</option>
+                                                                <option value="OR">1.5</option>
+                    
+                    
+                                                            </select>
+
+
+
+                                                        </td>
+
+                                                        <td>
+
+                                                            <input class="form-control" type="number" value="2"
+                                                            id="example-number-input" kl_vkbd_parsed="true">
+
+
+                                                        </td>
 
                                         
-                        
+                                                    </tr>
+
+                                                    
+
+
+
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                      
+                                            <p> <em> <span style="color: crimson;"> Warning: </span>Depending on disk size, settings
+                                                this value too high could render the unit 
+                                                non-operational if the diske fills up, you can expect 6Mb/Day/Channel @50hz </em></p>
+
+                                        
+                                       
+
+                            
                                         
                                 
                                     </div>
