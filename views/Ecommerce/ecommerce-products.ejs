@@ -1,5 +1,11 @@
 <%- contentFor('HeaderCss') %>
 
+<!-- switches -->
+<link href="public/assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
+<link href="public/assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+<link href="public/assets/libs/spectrum-colorpicker2/spectrum.min.css" rel="stylesheet" type="text/css">
+<link href="public/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
+
 <!-- ION Slider -->
 <link href="public/assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet" type="text/css"/>
 
@@ -116,10 +122,10 @@
 
                                         <button style="font-family: roboto; background:#0065de; margin-bottom: 15px;"
                                             type="button" class=" mt-3 btn btn-primary waves-effect waves-light"
-                                            id="chaining-alert">Save</button>
-
+                                            id="sa-warning">Save</button>
+                                            
                                     </div>
-
+                                
 
                                     <!-- table 1 map start-->
                                     <div class="col-md-7">
@@ -256,16 +262,20 @@
                                 
                                     <div class="col-md-5">
                                 
-                                        <H5>Data forwarding</H5>
+                                        <H5>Data Sharing Settings</H5>
                                         <p>
                                             Activate to send real-time data to the Raspberry Shake Server. This data will be used for
                                             local, regional and global earthquake location. Forwarding your data you will be participating in the global seismic community.
                                         </p>
                                      
-                                        <label class="form-label" for="input-repeat">Data sharing settings</label>
-                                        <div class="form-check form-switch mb-3" dir="ltr">
-                                            <input type="checkbox" class="form-check-input " id="customSwitch1" checked="" kl_vkbd_parsed="true">
-                                            <label class="form-check-label" for="customSwitch1">Fordward Data</label>
+                            
+                                        
+                                        <label class="mt2">Fordward Data</label>
+
+                                        
+                                        <div>
+                                            <input type="checkbox" id="switch3" switch="bool" checked />
+                            <label for="switch3" data-on-label="Yes" data-off-label="No"></label>
                                             
                                         </div>
                                       
@@ -344,6 +354,11 @@
                                             <p> <em> <span style="color: crimson;"> Warning: </span>Depending on disk size, settings
                                                 this value too high could render the unit 
                                                 non-operational if the diske fills up, you can expect 6Mb/Day/Channel @50hz </em></p>
+                                                <div>
+                                
+                                                    <button type="button" class="btn btn-primary waves-effect waves-light" id="sa-papa">Save</button>
+                                               
+                                                </div>
 
                                         
                                        
@@ -359,16 +374,16 @@
                                         <p>When no internet connection is expected, the Raspberry Shake provides a stand-alone mode that is tailored for no internet access. That is, NTP services will be started, but the Shake will not expect to see the internet prior to setting the system time, and instead it will rely on GPS timing (if available).
                                         </p>
                                       
-                                        <div class="form-check form-switch mb-3" dir="ltr">
-                                            <input type="checkbox" class="form-check-input " id="customSwitch1" checked="" kl_vkbd_parsed="false">
-                                            <label class="form-check-label" for="customSwitch1">Turn Offline Mode On</label>
-                                            
+                                        
+                                        <label class="mt-2">Offline Mode </label>
+                                    
+
+                                        <div class="switch">
+                                            <input type="checkbox" id="switch1" switch="success" checked />
+                                            <label for="switch1" data-on-label="On"
+                                                data-off-label="Off"></label>
                                         </div>
-                                        <div>
-                                
-                                            <button type="button" class="btn btn-primary waves-effect waves-light" id="sa-papa">Save</button>
                                        
-                                        </div>
                                 
 
 
@@ -631,7 +646,16 @@
 
 <script src="public/assets/js/pages/form-element.init.js"></script>
 
+<!-- switches -->
 
+<script src="public/assets/libs/select2/js/select2.min.js"></script>
+<script src="public/assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="public/assets/libs/spectrum-colorpicker2/spectrum.min.js"></script>
+<script src="public/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+<script src="public/assets/libs/admin-resources/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+<script src="public/assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+
+<script src="public/assets/js/pages/form-advanced.init.js"></script>
 
 
 
