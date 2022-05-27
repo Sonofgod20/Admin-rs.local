@@ -5,8 +5,8 @@
     
     .shad:hover{
     
-    transform: scale(1.04);
-       filter: drop-shadow(1px 2px 5px hsla(213, 100%, 44%, 0.557));
+    transform: scale(1.01);
+       filter: drop-shadow(1px 1px 3px hsla(213, 100%, 44%, 0.557));
     
     
     border-radius: 20px;
