@@ -37,7 +37,7 @@
                         <div class="table-responsive ">
                             <table class="table table-striped align-middle">
         
-                                <h6 class="mb-2" style="font-famiLy: roboto;">Station Details</h6>
+                                <h5 class="mb-2" style="font-famiLy: roboto;">Station Details</h5>
                                 <tbody>
 
 
@@ -129,7 +129,7 @@
                         </div>
                     </div>
     
-                    <h6 class=" mb-4" style="   font-famiLy: roboto;">Stations on Local Network</h6>
+                    <h5 class=" mb-2" style="   font-famiLy: roboto;">Stations on Local Network</h5>
     
                     <div class="table-responsive">
                         <table class="table table-responsive datatable dt-responsive nowrap" data-bs-page-length="5" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
@@ -140,7 +140,8 @@
                                     <th>Id</th>
                                     <th>Ip</th>
                                     <th>Status</th>
-                                    <th>Action</th>
+                                    
+                                 
                                   
                                 </tr>
                             </thead>
@@ -149,9 +150,15 @@
                                    
                                     
                                    
-                                    <td>
-                                        AM.<span class="text-primary">RCFC3</span>.00.EHZ
+                                    <td id="tooltip-container">
+
+                                       
+                                            <span data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="right"
+                                            data-bs-original-title="AM.RCFC3.00.EHZ"class="text-primary">RCFC3</span>
+                                    
                                     </td>
+
+
                                     <td>192.168.1.15</td>
                                     
                                 
@@ -167,9 +174,13 @@
                                    
                                     
                                   
-                                    <td>
-                                        AM.<span class="text-primary">RCFC4</span>.00.EHZ
-                                    </td>
+                                    <td id="tooltip-container">
+
+                                       
+                                        <span data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="right"
+                                        data-bs-original-title="AM.RCFC4.00.EHZ"class="text-primary">RCFC4</span>
+                                
+                                </td>
                                     <td>192.168.1.58</td>
                                     
                                     
@@ -185,9 +196,13 @@
                                    
                                     
                              
-                                    <td>
-                                        AM.<span class="text-primary">RCFC5</span>.00.EHZ 
-                                    </td>
+                                    <td id="tooltip-container">
+
+                                       
+                                        <span data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="right"
+                                        data-bs-original-title="AM.RCFC5.00.EHZ"class="text-primary">RCFC5</span>
+                                
+                                </td>
                                     <td>192.168.1.30</td>
                                     
                                     
@@ -202,9 +217,13 @@
                                    
                                     
                                   
-                                    <td>
-                                        AM.<span class="text-primary">RCFC6</span>.00.EHZ 
-                                    </td>
+                                    <td id="tooltip-container">
+
+                                       
+                                        <span data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="right"
+                                        data-bs-original-title="AM.RCFC6.00.EHZ"class="text-primary">RCFC6</span>
+                                
+                                </td>
                                     <td>192.168.1.29</td>
                                     
                                    
@@ -215,26 +234,7 @@
                                         <a href="javascript:void(0);" class="me-3 text-primary" data-bs-container="#tooltip-container41" data-bs-toggle="tooltip" data-bs-placement="top" title="Config"><i class="mdi mdi-cog font-size-18"></i></a>
                                    </td>
                                 </tr>
-                                <tr>
-                                   
-                                    
-                                
-                                    <td>
-                                        AM.<span class="text-primary">RCFC7</span>.00.EHZ 
-                                    </td>
-                                    <td>192.168.1.20</td>
-                                    
-                                  
-                                    <td>
-                                        <div class="badge badge-soft-danger font-size-12">Offline</div>
-                                    </td>
-                                    <td id="tooltip-container4">
-                                        <a href="#" class=" text-primary" 
-                                        data-bs-container="#tooltip-container4" 
-                                        data-bs-toggle="tooltip" data-bs-placement="top" 
-                                        title="Config"><i class="mdi mdi-cog font-size-18"></i></a>
-                                   </td>
-                                </tr>
+                              
                              
                                 
                                 
@@ -260,7 +260,7 @@
 
                 <div class="alert alert-info alert-dismissible fade show" role="alert" style="border-radius:10px;" >
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    <h6 class="text-truncate mb-2" style=" font-family: roboto; color:#00172A ;">Continue Securing your Account!</h6>
+                    <h5 class="text-truncate mb-2" style=" font-family: roboto; color:#00172A ;">Continue Securing your Account!</h5>
                    
                     <p> Please change your ssl password and increase account security.</p>
                    
@@ -270,21 +270,105 @@
 
 
                 
-
-                      <!-- Beauty card here -->
-                      <!-- 
-                    <div class="card-body border-top py-3">
-                        <div class="text-truncate">
-                            <span class="badge badge-soft-success font-size-11"><i class="mdi mdi-menu-up"> </i> text here </span>
-                            <span class="text-muted ms-2">From previous </span>
-                        </div> -->
-
-
-
-                        <div class="card" style="border-radius:10px">
-                            <div class="card-body">
+                <div class="card mb-2" style="border-radius:10px">
+                    <div class="card-body">
                 
-                                <h6 class="mb-3" style="font-famiLy: roboto;">Activity Preview</h6>
+                        <h5 class="mb-2" style="font-famiLy: roboto;">Network and Conections</h5>
+                
+                        <div class="row" style="justify-content: center; ">
+                
+                            <div class="table-responsive">
+                
+                
+                                <table class="table table-editable table-nowrap align-middle table-edits  table-borderless">
+                
+                                    <thead> </thead>
+                
+                                   
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                
+                                                <div class=""
+                                                    style="border-radius:12px; border: 2px solid rgb(232, 228, 228); text-align: center;">
+                                                    <div class="add_box bg-transparent">
+                                                        <div class="spinner-grow text-success m-3" role="status">
+                
+                                                        </div>
+                
+                                                        </h1>
+                
+                
+                                                        <h5 class="card-title mt-0" style="text-align:center ;">Internet</h5>
+                                                        <p style="text-align: center; font-size: 13px;">
+                                                            <span class="text-success">Online</span>
+                                                        </p>
+                
+                                                    </div>
+                
+                
+                                                </div>
+                
+                
+                                            </td>
+                                            <td>
+                
+                
+                
+                                                <div class=""
+                                                    style="border-radius:12px; border: 2px solid rgb(232, 228, 228); text-align: center;">
+                                                    <div class="add_box bg-transparent">
+                                                        <div class="spinner-grow text-success m-3" role="status">
+                
+                                                        </div>
+                
+                
+                
+                
+                                                        <h5 class="card-title mt-0" style="text-align:center ;">Services</h5>
+                                                        <p style="text-align: center; font-size: 13px;">
+                                                            <span class="text-success">Enabled</span>
+                                                        </p>
+                
+                                                    </div>
+                
+                
+                                                </div>
+                
+                
+                                            </td>
+                                            <td>
+                                                <div class=""
+                                                    style="border-radius:12px; border: 2px solid rgb(232, 228, 228); text-align: center;">
+                                                    <div class="add_box bg-transparent">
+                
+                
+                                                        <h3>
+                                                            <div class=" text-muted mdi mdi-emoticon-sad-outline m-3"></div>
+                                                        </h3>
+                
+                                                    </div>
+                
+                                                    <h5 class="card-title mt-0" style="text-align:center ;">Data Center</h5>
+                                                    <p style="text-align: center; font-size: 13px;">
+                                                        <span class="text-muted" style="font-family: 10px;">Disabled</span>
+                                                    </p>
+                
+                                                </div>
+                
+                
+                            </div>
+                
+                            </td>
+
+                            </tr>
+                
+                            </tbody>
+                            </table>
+
+                         
+                
+                                <h5 class="mb-3" style="font-famiLy: roboto;">Activity Preview</h5>
                                         
                              
                                 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -328,13 +412,10 @@
                       
                                     </script>
                                 </div>
+                     
+                                <p class="mb-2" style="margin-top:10px ;">Use the ShakeNet web or mobile apps to visualize and analyze your data in detail.</p>
                                 
-
-                             
-
-                                <p class="mb-0" style="margin-top:10px ;">Use the ShakeNet web or mobile apps to visualize and analyze your data in detail.</p>
-                                
-                            </div>
+                         
         
                             <div style="margin-left: 20px; margin-bottom: 20px;">
                                 <button style=" background:#0065de;" type="button" class="btn btn-primary btn-sm waves-effect waves-light">ShakeNet Web</button>
@@ -342,53 +423,24 @@
                                 <button style=" background:#0065de;" type="button" class="btn btn-primary btn-sm waves-effect waves-light">Web App</button>
         
         </div>
+
+
                         </div>
+                
+                    </div>
+                </div>
+                      
+                            
+                    
+                        </div>
+                  
+
+
 
                         <div class="card" style="border-radius:10px ;">
                             <div class="card-body">
                 
-                                <h4 class="card-title mb-4" style="font-famiLy: roboto; font-size:20px;">System Status</h4>
-    
-                                <div class="row">
-                                    <div class="col-xl-6 col-sm-4">
-                                        <div class="text-center mt-4">
-                                            <h5 class="font-size-14 mb-4">Disk Usage</h5>
-                
-                                            <div dir="ltr">
-                                                <div id="square-roundslider" class="rs-range-success"></div>
-                                            </div>
-                                           <div class="text-muted mb-0" style="margin-top:15px ;">38 / 423 MB </div>
-    
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- <div class="col-xl-4 col-sm-6">
-                                        <div class="text-center mt-4">
-                                            <h5 class="font-size-14 mb-4">Temperature</h5>
-                
-                                            <div dir="ltr">
-                                                <div id="handleshape-dot" class="rs-range-info"></div>
-                                            </div>
-    
-                                            <div class="text-muted mb-0" style="margin-top:15px ;">26 °C  / 65 °F </div>
-                                        </div>
-                                    </div> -->
-    
-                                    <div class="col-xl-4 col-sm-6">
-                                        <div class="text-center mt-4">
-                                            <h5 class="font-size-14 mb-4">CPU Activity</h5>
-                
-                                            <div dir="ltr">
-                                                <div id="border-roundslider" class="rs-range-danger rs-circle-border"></div>
-                                            </div>
-                                            <div class="text-muted mb-0" style="margin-top:15px ;">50.5% </div>
-                                        </div>
-                                    </div>
-                                    
-                
-                                    
-                                  
-                                </div>
+                           <h5>System Stats</h5>
                             </div>
                         </div>
                   
@@ -400,93 +452,103 @@
 
                     </div> 
 
+                            <div class="col-md-4">
+                                <div class="card" style="border-radius:10px; padding: 10px;">
+                                    <div class="card-body">
 
-<div class="col-md-4">
-                <div class="card" style="border-radius:10px; padding: 10px;">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="flex-1 overflow-hidden">
-                                <h6 class="card-title  mb-2" style="color:#0065de">Software tools</h6>
-                                <p class="mb-0">Download useful software for your shake!</p>
-                            </div>
-                            <div class="text-primary ms-auto">
-                              
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row" style="justify-content: center;">
-                    
-                    
-                
-                <div class="col-lg-5">
-                    
-                    <div class="card shad" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)">
-                        <div class="card-header bg-transparent">
-                            <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-database-arrow-down"></i>
-                            
-                            </h1>
+                                        <div class="table-responsive">
+                                            <h5>Software tools</h5>
+                                            <p>Download useful software for your shake!</p>
 
-                           
-                            <h5 class="card-title mt-0" style="text-align:center ;">Data</h5>
-                            <p style="color:#0065de; text-align: center;">
-                                <a href="ftp://rs.local/">Download</a> </p>
-                                
-                        </div>
-                        
-                        
-                    </div>
+                                            <table class="table table-editable table-nowrap align-middle table-edits  table-borderless">
 
-                    <div class="card shad" style="border-radius:12px;border: 2px solid rgb(232, 228, 228)">
-                        <div class="card-header bg-transparent ">
-                            <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-folder-download-outline"></i></h1>
-                            <h5 class="card-title mt-0" style="text-align:center ;">Logs</h5>
-                            <p style="color:#0065de; text-align: center;">
-                                <a href="http://rs.local/api/logs">Download</a> </p>
-                        </div>
-                        
-                    </div>
-    
-                            
-                        </div>
-                    
-                        <div class="col-lg-5">
+                                                <thead> </thead>
 
-                            <div class="card shad" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)"
-                                title="With Swarm: enjoy, explore, discover and understand earthquakes in a simple way">
-                                <div class="card-header bg-transparent ">
-                                    <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-graphql"></i></h1>
-                                    <h5 class="card-title mt-0" style="text-align:center ;">Swarm</h5>
-                                    <p style="color:#0065de; text-align: center;">
-                                        <a href="http://rs.local/download/SWARM.zip">Download</a>
-                                    </p>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="card shad" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)">
+                                                                <div class="add_box bg-transparent">
+                                                                    <h1 class=" text-primary m-2" style="text-align: center;"><i
+                                                                            class="mdi mdi-database-arrow-down"></i></h1>
+                                                                    <h5 class="card-title mt-0" style="text-align:center ;">Data</h5>
+                                                                    <p style="color:#0065de; text-align: center;">
+                                                                        <a href="ftp://rs.local/">Download</a>
+                                                                    </p>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </td>
+
+                                                        <td>
+
+                                                            <div class="card shad" style="border-radius:12px;border: 2px solid rgb(232, 228, 228)">
+                                                                <div class="add_box bg-transparent ">
+                                                                    <h1 class=" text-primary m-2" style="text-align: center;"><i
+                                                                            class="mdi mdi-folder-download-outline"></i></h1>
+                                                                    <h5 class="card-title mt-0" style="text-align:center ;">Logs</h5>
+                                                                    <p style="color:#0065de; text-align: center;">
+                                                                        <a href="http://rs.local/api/logs">Download</a>
+                                                                    </p>
+                                                                </div>
+
+                                                            </div>
+
+                                                        <td>
+                                                            <div class="card shad" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)"
+                                                                title="With Swarm: enjoy, explore, discover and understand earthquakes in a simple way">
+                                                                <div class="add_box bg-transparent ">
+                                                                    <h1 class=" text-primary m-2" style="text-align: center;"><i
+                                                                            class="mdi mdi-graphql"></i></h1>
+                                                                    <h5 class="card-title mt-0" style="text-align:center ;">Swarm</h5>
+                                                                    <p style="color:#0065de; text-align: center;">
+                                                                        <a href="http://rs.local/download/SWARM.zip">Download</a>
+                                                                    </p>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </td>
+
+                                                        </td>
+
+                                                    </tr>
+
+
+                                                    <tr>
+
+                                                        <td>
+
+                                                            <div class="card shad" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)"
+                                                                title=" View 12 hours of data at a time, updates every 2 minutes">
+                                                                <div class="add_box bg-transparent ">
+                                                                    <h1 class=" text-primary m-2" style="text-align: center;"><i
+                                                                            class="mdi mdi-cosine-wave"></i></h1>
+                                                                    <h5 class="card-title mt-0" style="text-align:center ;">Helicorder</h5>
+                                                                    <p style="color:#0065de; text-align: center;">
+                                                                        <a href="http://rs.local/heli" style="font-size:13px ;">Download</a>
+                                                                    </p>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </td>
+
+                                                    </tr>
+
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+
                                 </div>
-                            
-                            </div>
-                            
-                            <div class="card shad" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)"
-                                title=" View 12 hours of data at a time, updates every 2 minutes">
-                                <div class="card-header bg-transparent ">
-                                    <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-cosine-wave"></i></h1>
-                                    <h5 class="card-title mt-0" style="text-align:center ;">Helicorder</h5>
-                                    <p style="color:#0065de; text-align: center;">
-                                        <a href="http://rs.local/heli">Download</a>
-                                    </p>
-                                </div>
-                            
-                            </div>
-    
-                    
-                        </div>
-                        
-    
-    
-    
-                    </div>
-               
-                    
-                    
-                </div>
                    
 
                 
@@ -512,7 +574,7 @@
                                 <div class="d-flex">
                                     <div class="flex-1 overflow-hidden">
                                      
-                                        <h6 class="card-title  mb-2" style="color:#0065de">Online Apps</h6>
+                                        <h5 class="  mb-2" style="color:#0065de">Online Apps</h5>
                                         <p class="mb-0">Use powerfull tools online</p>
 
                                     </div>
@@ -527,15 +589,23 @@
                             
                           <div class="row" style="justify-content: center;">
                     
+
+
+                        
                     
                 
                             <div class="col-lg-5">
                                 
-                                <div class="card shad" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)"  
+                                <div class="card shad" id="tooltip-container" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)"  
                                 title="Global map with the latest earthquake activities">
-                                    <div class="card-header bg-transparent">
-                                        <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-database-arrow-down"></i></h1>
+                                
+                                    <div class="add_box bg-transparent">
+
+                                        <h1 class=" text-primary m-2" style="text-align: center;">
+                                            <i class="mdi mdi-database-arrow-down"></i></h1>
                                         <h5 class="card-title mt-0" style="text-align:center ;">Station View</h5>
+
+
                                         <p style="color:#0065de; text-align: center;">
                                          <a href="https://stationview.raspberryshake.org/">Open</a> </p>
                                     </div>
@@ -544,8 +614,8 @@
         
                                 <div class="card shad" style="border-radius:12px;border: 2px solid rgb(232, 228, 228)" 
                                 title="View data for all stations, all channels, over all time!">
-                                    <div class="card-header bg-transparent ">
-                                        <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-folder-download-outline"></i></h1>
+                                    <div class="add_box bg-transparent ">
+                                        <h1 class=" text-primary m-2" style="text-align: center;"><i class="mdi mdi-folder-download-outline"></i></h1>
                                         <h5 class="card-title mt-0" style="text-align:center ;">Data View</h5>
                                         <p style="color:#0065de; text-align: center;">
                                          <a href="https://dataview.raspberryshake.org/">Open</a> </p>
@@ -560,8 +630,8 @@
     
                                 <div class="card shad" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)" 
                                 title="P-wave and S-wave picker to locate epicenters of earthquakes">
-                                    <div class="card-header bg-transparent ">
-                                        <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-graphql"></i></h1>
+                                    <div class="add_box bg-transparent ">
+                                        <h1 class=" text-primary m-2" style="text-align: center;"><i class="mdi mdi-graphql"></i></h1>
                                         <h5 class="card-title mt-0" style="text-align:center ;">Eq Locator</h5>
                                         <p style="color:#0065de; text-align: center;">
                                          <a href="https://locator.raspberryshake.org/">Open</a> </p>
@@ -571,8 +641,8 @@
         
                                 <div class="card shad" style="border-radius:12px; border: 2px solid rgb(232, 228, 228)" 
                                 title="Create and download audio files of the latest earthquakes">
-                                    <div class="card-header bg-transparent ">
-                                        <h1 class=" text-primary" style="text-align: center;"><i class="mdi mdi-cosine-wave"></i></h1>
+                                    <div class="add_box bg-transparent ">
+                                        <h1 class=" text-primary m-2" style="text-align: center;"><i class="mdi mdi-cosine-wave"></i></h1>
                                         <h5 class="card-title mt-0" style="text-align:center ;">Eq Sound</h5>
                                         <p style="color:#0065de; text-align: center;">
                                          <a href="https://sound.raspberryshake.org/">Open</a> </p>
@@ -590,64 +660,7 @@
                         </div>
                             
                         </div>
-                        <!-- <div class="row">
-                            <div class="col-lg-6">
-                                <div class="card" style="border-radius:12px;">
-                                    <div class="card-header bg-transparent ">
-                                        <h1 class="my-0 text-primary" style="text-align: center; font-size: 50px;"><i class="mdi mdi-database-arrow-down me-3"></i></h3>
-                                        
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title mt-0" style="text-align:center ;">Station View</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk.</p>
-                                        <p class="card-title" href="#" style="color:#0065de; text-align: center;">Open</p>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="col-lg-6">
-                                <div class="card" style="border-radius:12px;">
-                                    <div class="card-header bg-transparent ">
-                                        <h1 class="my-0 text-primary" style="text-align: center; font-size: 50px;"><i class="mdi mdi-graphql me-3"></i></h3>
-                                        
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title mt-0" style="text-align:center ;">Data View</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk.</p>
-                                        <p class="card-title" href="#" style="color:#0065de; text-align: center;">Open</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="card" style="border-radius:12px;">
-                                    <div class="card-header bg-transparent ">
-                                        <h1 class="my-0 text-primary" style="text-align: center; font-size: 50px;"><i class="mdi mdi-folder-download-outline me-3"></i></h3>
-                                        
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title mt-0" style="text-align:center ;">Eq Locator</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk.</p>
-                                        <p class="card-title" href="#" style="color:#0065de; text-align: center;">Open</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="card" style="border-radius:12px;">
-                                    <div class="card-header bg-transparent ">
-                                        <h1 class="my-0 text-primary" style="text-align: center; font-size: 50px;"><i class="mdi mdi-folder-download-outline me-3"></i></h3>
-                                        
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title mt-0" style="text-align:center ;">Eq Sound</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk.</p>
-                                        <p class="card-title" href="#" style="color:#0065de; text-align: center;">Open</p>
-                                    </div>
-                                </div>
-                            </div>
-        
-        
-        
-                        </div> -->
+                
                     </div> 
 
 
