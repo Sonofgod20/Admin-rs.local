@@ -6483,6 +6483,12 @@ textarea.form-control-lg {
 .bg-info {
   background-color: #4aa3ff !important; }
 
+  .bg-red{
+
+    background-color: red !important;
+
+  }
+
 .bg-warning {
   background-color: #fcb92c !important; }
 

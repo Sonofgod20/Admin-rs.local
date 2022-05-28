@@ -94,10 +94,10 @@ $("#outer-border-dot").roundSlider({
 
 $("#handle-arrow").roundSlider({
     sliderType: "min-range",
-    radius: 105,
+    radius: 50,
     width: 16,
-    value: 75,
-    handleSize: 0,
+    value: 50,
+    handleSize: -500,
     handleShape: "square",
     circleShape: "half-top",
     showTooltip: false,
