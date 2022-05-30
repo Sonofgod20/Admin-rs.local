@@ -1,6 +1,6 @@
 /*
-Template Name: Nazox -  Admin & Dashboard Template
-Author: Themesdesign
+Template Name: RaspberryShake -  Admin & Dashboard Template
+Author: Javier
 Contact: themesdesign.in@gmail.com
 File: Sweetalert Js File
 */
@@ -278,6 +278,37 @@ File: Sweetalert Js File
                 }
               })
         });
+
+
+
+
+   //chaining modal alert
+   $('#recovery').click(function () {
+    Swal.mixin({
+        input: 'text',
+        confirmButtonText: 'Next &rarr;',
+        showCancelButton: true,
+        confirmButtonColor: "#5664d2",
+        cancelButtonColor: "#74788d",
+        progressSteps: ['1', '2', '3']
+      }).queue([
+        {
+          title: 'Please Answer Security Questions',
+          text: 'What’s your favorite movie?'
+        },
+        
+        'What city were you born in?',
+      ]).then( function (result) {
+        if (result.value) {
+          Swal.fire({
+            title: 'All done!',
+            html:
+              'Password Changed to: shakeme',
+            confirmButtonText: 'Done!'
+          })
+        }
+      })
+});
 
         //Danger
         $('#dynamic-alert').click(function () {

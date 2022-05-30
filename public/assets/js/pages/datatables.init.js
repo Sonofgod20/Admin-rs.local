@@ -1,6 +1,6 @@
 /*
-Template Name: Nazox -  Admin & Dashboard Template
-Author: Themesdesign
+Template Name: RaspberryShake -  Admin & Dashboard Template
+Author: Javier
 Contact: themesdesign.in@gmail.com
 File: Datatables Js File
 */

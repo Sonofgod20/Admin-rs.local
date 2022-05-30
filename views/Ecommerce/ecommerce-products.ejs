@@ -179,9 +179,9 @@
 
                                             <div class="tab-pane" id="profile1" role="tabpanel">
                                                 
-                                                <h6 class="m-0">
+                                                <h5 class="m-0">
                                                     Manual Settings
-                                                </h6>
+                                                </h5>
 
                                                 <div class="table-responsive">
 
@@ -503,13 +503,13 @@
                                         <ul class="nav nav-tabs nav-tabs-custom nav-justified" role="tablist">
                                             <li class="nav-item">
                                                 <a class="nav-link active" data-bs-toggle="tab" href="#home5" role="tab">
-                                                    <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                                    <span class="d-block d-sm-none"><i class="fas fa-wifi"></i></span>
                                                     <span class="d-none d-sm-block">Wifi Settings</span> 
                                                 </a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link" data-bs-toggle="tab" href="#profile4" role="tab">
-                                                    <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                                    <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
                                                     <span class="d-none d-sm-block">Advance Wifi Settings</span> 
                                                 </a>
                                             </li>
@@ -551,7 +551,8 @@
                                                 <input class="form-control" type="password" 
                                                 value="hunter2" id="example-password-input" kl_vkbd_parsed="true" style="width:auto ;">
                  
-                                                <button type="button" class="btn btn-primary waves-effect waves-light mt-3" id="sa-position">Test Wifi</button>
+                                                <button type="button" class="btn btn-success waves-effect waves-light mt-3" id="sa-position">Test Wifi</button>
+                                                <button type="button" class="btn btn-primary waves-effect waves-light mt-3">Save</button>
                                             </div>
                                             </div>
 
@@ -623,7 +624,7 @@
                                             and to the cloud data server, used as part of back-end processing of
                                             Raspberry Shake network data and to support the online global map of
                                             Raspberry Shake stations, viewable <a
-                                                href="https://stationview.raspberryshake.org/">here</a></p>
+                                            target=”_blank”  href="https://stationview.raspberryshake.org/">here</a></p>
 
                                         <div class="table-responsive">
                                             <table
@@ -681,7 +682,7 @@
 
                                     <div class="col-md-7">
 
-                                        <h4 class="card-title">Data Casting</h4>
+                                        <h5>Data Casting</h5>
 
                                         <div class="table-responsive">
                                             <table
@@ -763,19 +764,131 @@
 
                             <div class="tab-pane fade" id="v-pills-security" role="tabpanel"
                                 aria-labelledby="v-pills-security-tab">
-                                <p>
-                                    :D fund seitan letterpress, keytar raw denim keffiyeh etsy
-                                    art party before they sold out master cleanse gluten-free squid
-                                    scenester freegan cosby sweater. Fanny pack portland seitan DIY,
-                                    art party locavore wolf cliche high life echo park Austin. Cred
-                                    vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
-                                    farm-to-table.
-                                </p>
-                                <p class="mb-0">Fanny pack portland seitan DIY,
-                                    art party locavore wolf cliche high life echo park Austin. Cred
-                                    vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
-                                    farm-to-table.
-                                </p>
+                               
+                                
+
+                                <div class="row">
+                                
+                                    <div class="col-md-5">
+                                        <h5>Change SSH Password</h5>
+                                        
+                                        <div class="my-4">
+                                            <p>Do not get hacked! CHANGE YOUR SSH passwords!</p>
+                                            <!-- Small modal -->
+                                            <button type="button" class="btn btn-primary waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center">Change Password</button>
+                                        </div>
+
+                                        <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title mt-0">Change SSH Password</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+
+
+
+
+
+                                                        <form class="custom-validation" action="#">
+                                      
+                           
+
+                                                            <div class="mb-3">
+                                                            <label>Enter your Current Password</label>
+                                                            <input type="password" class="form-control" required=""
+                                                            placeholder="Default Password: shakeme" kl_vkbd_parsed="true">
+                                                            </div>
+                    
+                                                            <div class="mb-3">
+                                                                <label>Enter your new password</label>
+                                                                <div>
+                                                                    <input type="password" id="pass2" class="form-control" required
+                                                                            placeholder="New Password"/>
+                                                                </div>
+                                                                <div class="mt-2">
+                                                                    <input type="password" class="form-control" required
+                                                                            data-parsley-equalto="#pass2"
+                                                                            placeholder="Re-Type Password"/>
+                                                                </div>
+                                                            </div>
+                    
+
+                                                            <div class="mb-3">
+                                                                <h6> Security Questions *</h6>
+                                                                <label>What’s your favorite movie?</label>
+                                                                <div>
+                                                                    <input type="text" class="form-control" required=""
+                                                                    placeholder="Answer" kl_vkbd_parsed="true">
+                                                                </div>
+
+                                                               
+                                                                <div class="mt-2">
+                                                                    <label>What city were you born in?</label>
+                                                                    <input type="text" class="form-control" required=""
+                                                                    placeholder="Answer" kl_vkbd_parsed="true">
+                                                                </div>
+                                                            </div>
+                    
+                    
+                    
+                                                                  <div>
+                                                                    <button type="submit" class="btn btn-primary waves-effect waves-light me-1">
+                                                                        Save
+                                                                    </button>
+                                                                    <button type="reset" class="btn btn-secondary waves-effect">
+                                                                        Cancel
+                                                                    </button>
+                                                                </div>
+                    
+                    
+                                                            </form>
+
+
+
+                                                    </div>
+                                                </div><!-- /.modal-content -->
+                                            </div><!-- /.modal-dialog -->
+                                        </div><!-- /.modal -->
+
+                                        <p>Your Raspberry Shake Personal Seismograph is an IoT with a Debian Operating System. This means it can be hacked. You can start by changing the ssh passwords from the defaults we ship the units with. 
+                                        For Linux power users, we recommend using ssh-keys, they are way more secure than passwords.</p>
+
+                                    </div>
+
+
+
+
+
+                                    <div class="col-md-7">
+
+
+                                        <h5>Autentification Factors</h5>
+
+                                        <div class="form-check form-switch-inline mb-3 " onclick="return false" dir="ltr">
+                                            <input type="checkbox" class="form-check-input" id="customSwitch7" checked="" kl_vkbd_parsed="true">
+                                            <label class="form-check-label" for="customSwitch7"> </i>Password Protected </label>
+                                        </div>
+                                        <div class="form-check form-switch-inline" dir="ltr">
+                                            <input type="checkbox" class="form-check-input" disabled="" id="customSwitch8" kl_vkbd_parsed="true">
+                                            <label class="form-check-label" for="customSwitch8">Security Questions</label>
+                                        </div>
+
+                                        <h5 class="mt-3">Recovery Options</h5>
+
+                                        <button type="button" class="btn btn-danger waves-effect waves-light" id="recovery">Recover Password</button>
+
+                                        <p class="mt-2"><em>If you forgot your security questions please visit our <a target=”_blank” href="https://manual.raspberryshake.org/hacked.html"> Help Manual </a> to recover SSH password.</em></p>
+
+
+                                    </div>
+
+
+
+
+
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -850,6 +963,11 @@
 
 <script src="public/assets/js/pages/form-advanced.init.js"></script>
 
+<!-- validation -->
 
+
+<script src="public/assets/libs/parsleyjs/parsley.min.js"></script>
+
+<script src="public/assets/js/pages/form-validation.init.js"></script>
 
 <%- contentFor('BottomJs') %>
