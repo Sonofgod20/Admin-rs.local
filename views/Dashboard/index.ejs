@@ -438,6 +438,7 @@
 
 
                                         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
                                         <div class="table-responsive">
                                             <div id="graph" style=" height: 300px; width: auto;  "></div>
 
@@ -450,13 +451,18 @@
                                                     var y = Math.round(Math.random() * 5) + 1
                                                     newArray[i] = y
                                                 }
-
+                                              
+                                                
                                                 Plotly.plot('graph', [{
+                                                  
                                                     y: newArray,
                                                     mode: 'lines',
                                                     line: { color: '#CD1A47' }
+                                                 
 
-                                                }]);
+                                                }]); 
+
+                                                
 
                                                 var cnt = 1;
 
